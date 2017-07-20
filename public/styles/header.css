@@ -1,0 +1,85 @@
+body{
+}
+
+header{
+  align-items: center;
+  background: whitesmoke;
+  border-bottom: 3px solid black;
+  display: flex;
+  height: 110px;
+  justify-content: space-around;
+}
+
+header h3{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+}
+
+.icon-bar{
+  margin: 2px;
+}
+
+.navbar-toggle{
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+  justify-content: space-around;
+  padding: 17px;
+  outline: none;
+  width: 56px;
+  transition: all .6s;
+}
+
+.navbar-toggle-active{
+  background: black;
+  border:2px solid #fff;
+  border-radius: 6px;
+  transition: all .6s;
+}
+
+.header-left-container{
+  display: flex
+}
+
+.icon-bar{
+  background: #ccc;
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+}
+
+.nav-links{
+  border-bottom: 3px solid black;
+}
+
+.nav-links-hide{
+  display: none;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 30px 0px 15px 0px;
+}
+
+.nav-links a{
+  border-bottom: 1px solid black;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-links a:hover{
+  color: #C7C;
+  transition: all .5s;
+}
