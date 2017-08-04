@@ -11567,7 +11567,7 @@ var _app = __webpack_require__(225);
 
 var _app2 = _interopRequireDefault(_app);
 
-__webpack_require__(231);
+__webpack_require__(232);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25783,6 +25783,10 @@ var _skills = __webpack_require__(230);
 
 var _skills2 = _interopRequireDefault(_skills);
 
+var _side_nav_bar = __webpack_require__(231);
+
+var _side_nav_bar2 = _interopRequireDefault(_side_nav_bar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -25790,6 +25794,7 @@ var App = function App() {
     'div',
     { className: 'app' },
     _react2.default.createElement(_header2.default, null),
+    _react2.default.createElement(_side_nav_bar2.default, null),
     _react2.default.createElement(_greeting_container2.default, null),
     _react2.default.createElement(_inital_summary2.default, null),
     _react2.default.createElement(_skills2.default, null)
@@ -25883,8 +25888,8 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "http://www.google.com" },
-          "home"
+          { href: "#about-me" },
+          "about"
         )
       ),
       _react2.default.createElement(
@@ -25892,7 +25897,7 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "skill-container" },
+          { href: "#skills" },
           "skills"
         )
       ),
@@ -25901,8 +25906,8 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "./home" },
-          "about me"
+          { href: "#projects" },
+          "projects"
         )
       ),
       _react2.default.createElement(
@@ -25910,8 +25915,17 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "./home" },
+          { href: "#resume" },
           "resume"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "#contact" },
+          "contact"
         )
       )
     )
@@ -25940,7 +25954,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var GreetingContainer = function GreetingContainer() {
   return _react2.default.createElement(
     "div",
-    { className: "greeting-container" },
+    { id: "background", className: "greeting-container" },
     _react2.default.createElement(
       "div",
       { className: "greeting-container-img" },
@@ -25988,7 +26002,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var InitialSummary = function InitialSummary() {
   return _react2.default.createElement(
     "div",
-    { className: "initial-summary-container" },
+    { id: "about-me", className: "initial-summary-container" },
     _react2.default.createElement(
       "section",
       { className: "intial-section-wrapper" },
@@ -26067,16 +26081,153 @@ exports.default = Skills;
 "use strict";
 
 
-var _jquery = __webpack_require__(232);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SideNavBar = function (_Component) {
+  _inherits(SideNavBar, _Component);
+
+  function SideNavBar() {
+    _classCallCheck(this, SideNavBar);
+
+    return _possibleConstructorReturn(this, (SideNavBar.__proto__ || Object.getPrototypeOf(SideNavBar)).call(this));
+  }
+
+  _createClass(SideNavBar, [{
+    key: "render",
+    value: function render() {
+      var linkStyle = { display: "none" };
+
+      return _react2.default.createElement(
+        "div",
+        { className: "side-nav-links" },
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#about-me" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "about me"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#skills" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "skills"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#projects" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "projects"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#resume" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "resume"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#contact" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "contact"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return SideNavBar;
+}(_react.Component);
+
+exports.default = SideNavBar;
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(233);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+(0, _jquery2.default)(document).ready(function () {
+    (0, _jquery2.default)('a').bind("click", jump);
+
+    if (location.hash) {
+        setTimeout(function () {
+            (0, _jquery2.default)('html, body').scrollTop(0).show();
+            jump();
+        }, 0);
+    } else {
+        (0, _jquery2.default)('html, body').show();
+    }
+});
+
 (0, _jquery2.default)(function () {
     var $navBar = (0, _jquery2.default)('.navbar-toggle');
     var $navLinks = (0, _jquery2.default)('.nav-links');
-
     var navActive = function navActive() {
         return $navBar.addClass('navbar-toggle-active');
     };
@@ -26084,7 +26235,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         return $navBar.removeClass('navbar-toggle-active');
     };
     var activateNav = function activateNav() {
-        return $navLinks.toggle('nav-links-active');
+        $navLinks.toggle('nav-links-active');
+        (0, _jquery2.default)('#greeting-line-animation-1').toggle();
+        (0, _jquery2.default)('#greeting-line-animation-2').toggle();
     };
 
     $navBar.hover(function () {
@@ -26096,49 +26249,74 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     $navBar.on('click', function () {
         return activateNav();
     });
+    (0, _jquery2.default)('.side-nav-link').hover(function () {
+        (0, _jquery2.default)(this).children('.side-nav-text').toggle();
+        (0, _jquery2.default)(this).children('.side-nav-dot').toggleClass('side-nav-dot-active');
+    }, function () {
+        (0, _jquery2.default)(this).children('.side-nav-text').toggle();
+        (0, _jquery2.default)(this).children('.side-nav-dot').toggleClass('side-nav-dot-active');
+    });
 });
 
-function isElementInViewport(elem) {
+function isElementInViewport(elem, type) {
     var $elem = (0, _jquery2.default)('.initial-summary-line-1');
     var scrollElem = navigator.userAgent.toLowerCase().indexOf('webkit') != -1 ? 'body' : 'html';
     var viewportTop = (0, _jquery2.default)(scrollElem).scrollTop();
-    var viewportBottom = viewportTop + (0, _jquery2.default)(window).height();
+    var viewportBottom = type === 1 || 3 ? viewportTop + (0, _jquery2.default)(window).height() - 50 : viewportTop + (0, _jquery2.default)(window).height() - 300;
 
     var elemTop = Math.round($elem.offset().top);
-    var elemBottom = elemTop + $elem.height();
+    var elemBottom = type === 3 ? elemTop + $elem.height() + 300 : elemTop + $elem.height();
 
     return elemTop < viewportBottom && elemBottom > viewportTop;
 }
 
-// Check if it's time to start the animation.
-function checkAnimation() {
+var checkAnimation = function checkAnimation() {
     var $elem = (0, _jquery2.default)('.initial-summary-line-1');
-    // If the animation has already been started
     if ($elem.hasClass('start-line-3')) return;
-    if (isElementInViewport($elem)) {
-        // Start the animation
+    if (isElementInViewport($elem, 1)) {
         $elem.addClass('start-line-3');
     }
-}
+};
 
-function checkAnimation2() {
+var checkAnimation2 = function checkAnimation2() {
     var $elem2 = (0, _jquery2.default)('.initial-summary-line-2');
-    // If the animation has already been started
     if ($elem2.hasClass('start-line-4')) return;
-    if (isElementInViewport($elem2)) {
-        // Start the animation
+    if (isElementInViewport($elem2, 2)) {
         $elem2.addClass('start-line-4');
     }
-}
+};
 
-// Capture scroll events
+var checkSideBar = function checkSideBar() {
+    var $sideBar = (0, _jquery2.default)('.side-nav-links');
+    // if($sideBar.hasClass('show-side-nav'))return
+    if (isElementInViewport($sideBar, 3)) {
+        $sideBar.addClass('show-side-nav');
+    } else {
+        $sideBar.removeClass('show-side-nav');
+    }
+};
+
 (0, _jquery2.default)(window).scroll(function () {
     checkAnimation();
     checkAnimation2();
+    checkSideBar();
 });
 
+var jump = function jump(e) {
+    if (e) {
+        e.preventDefault();
+        var _target = (0, _jquery2.default)(this).attr("href");
+    } else {
+        var _target2 = location.hash;
+    }
+
+    (0, _jquery2.default)('html,body').animate({
+        scrollTop: (0, _jquery2.default)(target).offset().top - 200
+    }, 1500, function () {});
+};
+
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

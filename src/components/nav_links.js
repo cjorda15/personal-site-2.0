@@ -6,16 +6,19 @@ const navBar = () => {
     <div className="nav-links nav-links-hide">
       <ul>
         <li>
-         <a href="http://www.google.com">home</a>
+         <a href="#about-me">about</a>
         </li>
         <li>
-         <a href="skill-container">skills</a>
+         <a href="#skills">skills</a>
         </li>
         <li>
-         <a href="./home">about me</a>
+         <a href="#projects">projects</a>
         </li>
         <li>
-         <a href="./home">resume</a>
+         <a href="#resume">resume</a>
+        </li>
+        <li>
+         <a href="#contact">contact</a>
         </li>
       </ul>
     </div>

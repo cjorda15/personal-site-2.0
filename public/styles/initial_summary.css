@@ -2,7 +2,7 @@
   background:#1b1b1b;
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 20px 75px 20px 25px;
 }
 
 .intial-section-wrapper{
@@ -20,12 +20,12 @@
   font-size: 2em;
   max-width: 731px;
 }
-  
+
 .initial-summary-img{
   background-image: url('../img_folder/me.jpg');
   background-position: right;
   background-repeat: no-repeat;
-  border-radius: 82px;
+  border-radius:160px;
   display: inline-block;
   height: 300px;
   width: 100%;
@@ -78,7 +78,7 @@ right: 0px;
       left:-600px;
          }
 
-    40% {
+    60% {
       background: #00b7c7;
     }
 
@@ -95,7 +95,7 @@ right: 0px;
       right:-400px;
 
          }
-   40% {
+   60% {
      background: #00b7c7;
    }
 
@@ -112,6 +112,6 @@ right: 0px;
       align-items: center;
     }
     .initial-summary-img{
-      width: 270px;
+      width: 280px;
     }
 }
