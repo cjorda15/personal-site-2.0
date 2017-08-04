@@ -3,17 +3,21 @@ body{
 
 header{
   align-items: center;
-  background: whitesmoke;
+  background: #F5F5F5;
   border-bottom: 3px solid black;
   display: flex;
   height: 110px;
   justify-content: space-around;
+  padding: 3px;
 }
 
 header h3{
   font-family: 'Quicksand', sans-serif;
   font-size: 2em;
+  color: #fff;
+  text-shadow: 0.6px 0.4px 0.2px #000;
 }
+
 
 .icon-bar{
   margin: 2px;
@@ -54,7 +58,8 @@ header h3{
 }
 
 .nav-links{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #000;
+  background-color: #FFFFFF;
 }
 
 .nav-links-hide{
@@ -71,15 +76,18 @@ header h3{
 }
 
 .nav-links a{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #bab0b0;
   color: #000;
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 
 .nav-links a:hover{
-  color: #C7C;
-  transition: all .5s;
+  border-bottom: 3px solid #000;
+  color: #cc12ab;
+  font-weight: 900;
+  /*text-shadow: 6px 4px 34px #000;*/
+  transition: all .2s;
 }

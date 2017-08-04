@@ -11567,7 +11567,7 @@ var _app = __webpack_require__(225);
 
 var _app2 = _interopRequireDefault(_app);
 
-__webpack_require__(229);
+__webpack_require__(231);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25775,6 +25775,14 @@ var _greeting_container = __webpack_require__(228);
 
 var _greeting_container2 = _interopRequireDefault(_greeting_container);
 
+var _inital_summary = __webpack_require__(229);
+
+var _inital_summary2 = _interopRequireDefault(_inital_summary);
+
+var _skills = __webpack_require__(230);
+
+var _skills2 = _interopRequireDefault(_skills);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -25782,7 +25790,9 @@ var App = function App() {
     'div',
     { className: 'app' },
     _react2.default.createElement(_header2.default, null),
-    _react2.default.createElement(_greeting_container2.default, null)
+    _react2.default.createElement(_greeting_container2.default, null),
+    _react2.default.createElement(_inital_summary2.default, null),
+    _react2.default.createElement(_skills2.default, null)
   );
 };
 
@@ -25882,7 +25892,7 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "./home" },
+          { href: "skill-container" },
           "skills"
         )
       ),
@@ -25942,6 +25952,8 @@ var GreetingContainer = function GreetingContainer() {
           { className: "greeting-main-text" },
           "Christopher Jordan"
         ),
+        _react2.default.createElement("span", { id: "greeting-line-animation-1" }),
+        _react2.default.createElement("span", { id: "greeting-line-animation-2" }),
         _react2.default.createElement(
           "p",
           { className: "greeting-main-subtext" },
@@ -25963,39 +25975,170 @@ exports.default = GreetingContainer;
 "use strict";
 
 
-var _jquery = __webpack_require__(230);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var InitialSummary = function InitialSummary() {
+  return _react2.default.createElement(
+    "div",
+    { className: "initial-summary-container" },
+    _react2.default.createElement(
+      "section",
+      { className: "intial-section-wrapper" },
+      _react2.default.createElement(
+        "p",
+        { className: "initial-summary-title" },
+        "Hey, call me Chris."
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "initial-summary-subtext" },
+        "I am a creative front-end developer who enjoys designing and developing UI/UX web experiences with a focus on usability and prefers to work smart and hard, because hey, this is fun."
+      ),
+      _react2.default.createElement("span", { className: "initial-summary-line-1" })
+    ),
+    _react2.default.createElement("div", { className: "initial-summary-img" }),
+    _react2.default.createElement(
+      "section",
+      { className: "intial-summary-description-container" },
+      _react2.default.createElement("span", { className: "initial-summary-line-2" }),
+      _react2.default.createElement(
+        "p",
+        { className: "inital-summary-description" },
+        " I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program, we begin by building skills in HTML5, CSS3, and Design Fundamentals. We continued laying a solid foundation in core Javascript with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with Node/express and SQL. In total, FEE graduates have the skills to turn design comps into working applications."
+      )
+    )
+  );
+};
+
+exports.default = InitialSummary;
+
+/***/ }),
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Skills = function Skills() {
+  return _react2.default.createElement(
+    "div",
+    { className: "skill-container" },
+    _react2.default.createElement(
+      "section",
+      { className: "skill-flex-container" },
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" }),
+      _react2.default.createElement("div", { className: "skill-flex-item" })
+    )
+  );
+};
+
+exports.default = Skills;
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(232);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(function () {
-  var $navBar = (0, _jquery2.default)('.navbar-toggle');
-  var $navLinks = (0, _jquery2.default)('.nav-links');
+    var $navBar = (0, _jquery2.default)('.navbar-toggle');
+    var $navLinks = (0, _jquery2.default)('.nav-links');
 
-  var navActive = function navActive() {
-    return $navBar.addClass('navbar-toggle-active');
-  };
-  var navUnactive = function navUnactive() {
-    return $navBar.removeClass('navbar-toggle-active');
-  };
-  var activateNav = function activateNav() {
-    return $navLinks.toggle('nav-links-active');
-  };
+    var navActive = function navActive() {
+        return $navBar.addClass('navbar-toggle-active');
+    };
+    var navUnactive = function navUnactive() {
+        return $navBar.removeClass('navbar-toggle-active');
+    };
+    var activateNav = function activateNav() {
+        return $navLinks.toggle('nav-links-active');
+    };
 
-  $navBar.hover(function () {
-    return navActive();
-  }, function () {
-    return navUnactive();
-  });
+    $navBar.hover(function () {
+        return navActive();
+    }, function () {
+        return navUnactive();
+    });
 
-  $navBar.on('click', function () {
-    return activateNav();
-  });
+    $navBar.on('click', function () {
+        return activateNav();
+    });
+});
+
+function isElementInViewport(elem) {
+    var $elem = (0, _jquery2.default)('.initial-summary-line-1');
+    var scrollElem = navigator.userAgent.toLowerCase().indexOf('webkit') != -1 ? 'body' : 'html';
+    var viewportTop = (0, _jquery2.default)(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + (0, _jquery2.default)(window).height();
+
+    var elemTop = Math.round($elem.offset().top);
+    var elemBottom = elemTop + $elem.height();
+
+    return elemTop < viewportBottom && elemBottom > viewportTop;
+}
+
+// Check if it's time to start the animation.
+function checkAnimation() {
+    var $elem = (0, _jquery2.default)('.initial-summary-line-1');
+    // If the animation has already been started
+    if ($elem.hasClass('start-line-3')) return;
+    if (isElementInViewport($elem)) {
+        // Start the animation
+        $elem.addClass('start-line-3');
+    }
+}
+
+function checkAnimation2() {
+    var $elem2 = (0, _jquery2.default)('.initial-summary-line-2');
+    // If the animation has already been started
+    if ($elem2.hasClass('start-line-4')) return;
+    if (isElementInViewport($elem2)) {
+        // Start the animation
+        $elem2.addClass('start-line-4');
+    }
+}
+
+// Capture scroll events
+(0, _jquery2.default)(window).scroll(function () {
+    checkAnimation();
+    checkAnimation2();
 });
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

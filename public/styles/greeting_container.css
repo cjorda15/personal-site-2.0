@@ -23,9 +23,9 @@
 }
 
 .greeting-main-text, .greeting-main-subtext{
-  animation: fill 3s;
+  animation: top 8s;
   animation-delay:0s;
-  animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
   font-family: 'Lobster',Georgia,serif;
   font-weight: 700;
   font-size: 4em;
@@ -33,6 +33,30 @@
 }
 .greeting-main-text{
   color: #fff;
+  text-shadow: 0.6px 0.4px 0.2px #000;
+}
+
+#greeting-line-animation-1, #greeting-line-animation-2{
+  animation-delay:0s;
+  animation-fill-mode: forwards;
+  background-color: #00b7c7;
+  /*display: block;*/
+  position: absolute;;
+  height: 3px;
+  /*margin: 20px 0;*/
+  width: 200px;
+}
+
+#greeting-line-animation-1{
+  animation: line1 2s;
+  top:190px;
+
+}
+
+#greeting-line-animation-2{
+  animation: line2 2s;
+  top:390px;
+
 }
 
 .greeting-main-subtext{
@@ -40,25 +64,45 @@
   text-shadow: 0.1px 0.4px 0.2px #fff;
 }
 
-@keyframes fill {
+
+@keyframes line1 {
     0%   {
-          display: none;
-          height: 0px;
-          opacity: 0;
-        }
-    25%  {
-          display: block;
-          height: 1em;
-          opacity: 0.3;
-        }
-    75%  {
-      height: 1em;
+      top:-200px;
 
-      opacity: 2em
-    }
+         }
+
+
     100% {
-      height: 1em;
+      top:190px;
+    }
+}
 
-      opacity: 4em;
+@keyframes line2 {
+    0%   {
+      top:-200px;
+
+         }
+
+
+    100% {
+      top:390px;
+    }
+}
+
+
+
+
+@keyframes top {
+    0%   {
+          position: relative;
+          opacity: 0;
+          height: 0em;
+
+         }
+
+
+    100% {
+          height: 30em;
+          opacity: 1;
     }
 }

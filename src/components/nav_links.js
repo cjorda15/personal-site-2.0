@@ -9,7 +9,7 @@ const navBar = () => {
          <a href="http://www.google.com">home</a>
         </li>
         <li>
-         <a href="./home">skills</a>
+         <a href="skill-container">skills</a>
         </li>
         <li>
          <a href="./home">about me</a>
