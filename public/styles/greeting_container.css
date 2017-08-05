@@ -56,7 +56,7 @@
 
 #greeting-line-animation-2{
   animation: line2 1.5s;
-  top:408px;
+  top:430px;
 
 }
 
@@ -87,7 +87,7 @@
 
 
     100% {
-      top:408px;
+      top:430px;
     }
 }
 

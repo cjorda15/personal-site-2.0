@@ -47,20 +47,36 @@ font-family: 'Quicksand', sans-serif;
 
 
 .animate-right:hover{
-    color:#fff;
+    /*color:#fff;
     cursor: default;
     text-shadow: 2px 2px 2px #1b1b1b;
     transform: rotate(360deg);
-    transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;*/
 }
 
 .animate-left:hover{
-    color:#fff;
+    /*color:#fff;
     font-size: 25px;
     cursor: default;
-    text-shadow: 2px 2px 2px #1b1b1b;
-    transform: rotate(-360deg);
-    transition: all 1s ease-in-out 0s;
+    text-shadow: 2px 2px 2px #1b1b1b;*/
+
+}
+
+.skill-animate-1,.skill-animate-3,.skill-animate-5,
+.skill-animate-7,.skill-animate-9{
+  color:#fff;
+  text-shadow: 2px 2px 2px #1b1b1b;
+  font-size: 22px;
+  transform: rotate(-360deg);
+  transition: all 1s ease-in-out 0s;
+}
+
+.skill-animate-4,.skill-animate-6,.skill-animate-2,.skill-animate-8{
+  color:#fff;
+  text-shadow: 2px 2px 2px #1b1b1b;
+  font-size: 22px;
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out 0s;
 }
 
 .skill-animate-1{
