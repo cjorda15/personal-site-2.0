@@ -1,0 +1,12 @@
+.projects{
+  background: #1b1b1b;
+}
+
+.projects-title{
+  border-bottom: #00b7c7 3px solid;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 44px;
+  margin-left: 30px;
+}

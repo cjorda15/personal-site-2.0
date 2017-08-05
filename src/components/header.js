@@ -3,7 +3,7 @@ import NavBar from './nav_links'
 const Header = () => {
   return(
     <div>
-      <header>
+      <header id="top">
         <div className="header-left-container">
           <h3>welcome to my site</h3>
         </div>

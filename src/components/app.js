@@ -4,6 +4,7 @@ import GreetingContainer from './greeting_container'
 import InitialSummary from './inital_summary.js'
 import Skills from './skills.js'
 import SideNavBar from './side_nav_bar'
+import Projects from './projects'
 
 const App = () => {
   return(
@@ -13,6 +14,7 @@ const App = () => {
       <GreetingContainer/>
       <InitialSummary/>
       <Skills/>
+      <Projects/>
     </div>
   )
 }

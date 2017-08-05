@@ -37,7 +37,7 @@
 }
 
 .initial-summary-line-1, .initial-summary-line-2{
-  animation-delay:0s;
+  animation-delay:2s;
   animation-fill-mode: forwards;
   display: block;
   background: #1b1b1b;
@@ -68,7 +68,7 @@ right: 0px;
 }
 
 .start-line-4{
-  animation: line-4 3s;
+  animation: line-4 7s;
   background: red;
 }
 
@@ -92,7 +92,7 @@ right: 0px;
 @keyframes line-4 {
     0%   {
       background: #00b7c7;
-      right:-400px;
+      right:-2000px;
 
          }
    60% {

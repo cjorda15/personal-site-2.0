@@ -3,6 +3,7 @@
 @import url('initial_summary.css');
 @import url('skills.css');
 @import url('side_nav_bar.css');
+@import url('projects.css');
 
 * {
   margin: 0px;

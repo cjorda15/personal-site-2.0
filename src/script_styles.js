@@ -39,6 +39,26 @@ $(function(){
     $(this).children('.side-nav-dot').toggleClass('side-nav-dot-active')
      }
    )
+
+   let randomColor = Math.ceil(Math.random()*9)
+
+   const runClear = (that)=> {
+   for(let i =1; i <10;i++){
+     $(that).removeClass(`skill-animate-${i}`)
+   }
+ }
+
+ $('.skill-flex-item').hover(
+
+   function(){
+     randomColor = Math.ceil(Math.random()*9)
+     $(this).addClass(`skill-animate-${randomColor}`);
+
+ },function(){
+   let that = this
+   setTimeout(function(){ runClear(that)},3000)
+
+ })
 })
 
 function isElementInViewport(elem,type) {
@@ -48,11 +68,11 @@ function isElementInViewport(elem,type) {
     const viewportBottom = type===1||3?
         viewportTop + $(window).height()-50
           :
-        viewportTop + $(window).height()-300;
+        viewportTop + $(window).height();
 
     const elemTop = Math.round( $elem.offset().top );
     const elemBottom = type===3?
-    elemTop + $elem.height()+300
+    elemTop + $elem.height()+1000
       :
     elemTop + $elem.height();
 
@@ -77,7 +97,6 @@ const checkAnimation2 = () => {
 
 const checkSideBar = () => {
   const $sideBar = $('.side-nav-links')
-  // if($sideBar.hasClass('show-side-nav'))return
   if (isElementInViewport($sideBar,3)) {
       $sideBar.addClass('show-side-nav')
   }else{
@@ -96,12 +115,12 @@ $(window).scroll(function(){
 const jump = function(e){
    if (e){
        e.preventDefault();
-       const target = $(this).attr("href");
+      var target = $(this).parents('.side-nav-link').prevObject[0].getAttribute('href')
    }else{
-       const target = location.hash;
+      var target = location.hash;
    }
 
    $('html,body').animate({
-       scrollTop: $(target).offset().top - 200
+       scrollTop: $(target).offset().top
    },1500,function(){});
 }
