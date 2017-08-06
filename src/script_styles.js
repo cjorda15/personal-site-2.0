@@ -114,12 +114,12 @@ $(window).scroll(function(){
 
 const jump = function(e){
    if (e){
-       e.preventDefault();
       var target = $(this).parents('.side-nav-link').prevObject[0].getAttribute('href')
    }else{
       var target = location.hash;
    }
-
+   if(target.indexOf("http")==0)return
+  //  e.preventDefault();
    $('html,body').animate({
        scrollTop: $(target).offset().top
    },1500,function(){});

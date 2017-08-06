@@ -13,7 +13,7 @@ const Skills = () => {
         <div  className="skill-flex-item ">Knex.js</div>
         <div  className="skill-flex-item ">SEO</div>
         <div  className="skill-flex-item ">Responsive Design</div>
-        <div  className="skill-flex-item ">GitHub</div>
+        <div  className="skill-flex-item ">jQuery</div>
       </section>
     </div>
   )
