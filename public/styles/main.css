@@ -10,3 +10,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+body{
+  line-height: 1.6;
+}

@@ -29,7 +29,7 @@
 
 .project-content{
   max-width: 900px;
-  margin: 0px auto;
+  margin: 60px auto 0px;
   min-width: 300px;
   width:90%;
 }
@@ -62,7 +62,7 @@
 .project-link-container a{
   text-decoration: none;
   color: #00b7c7;
-  font-size: 22px;
+  font-size: 38px;
   padding: 3px;
   margin: 10px;
   font-family: 'Quicksand', sans-serif;

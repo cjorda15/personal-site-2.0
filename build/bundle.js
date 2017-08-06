@@ -26610,7 +26610,7 @@ function isElementInViewport(elem, type) {
   var viewportBottom = type === 1 || 3 ? viewportTop + (0, _jquery2.default)(window).height() - 50 : viewportTop + (0, _jquery2.default)(window).height();
 
   var elemTop = Math.round($elem.offset().top);
-  var elemBottom = type === 3 ? elemTop + $elem.height() + 1000 : elemTop + $elem.height();
+  var elemBottom = type === 3 ? elemTop + $elem.height() + 10000 : elemTop + $elem.height();
 
   return elemTop < viewportBottom && elemBottom > viewportTop;
 }

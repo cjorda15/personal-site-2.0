@@ -72,7 +72,7 @@ function isElementInViewport(elem,type) {
 
     const elemTop = Math.round( $elem.offset().top );
     const elemBottom = type===3?
-    elemTop + $elem.height()+1000
+    elemTop + $elem.height()+10000
       :
     elemTop + $elem.height();
 
