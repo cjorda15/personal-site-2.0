@@ -4,7 +4,7 @@
   width: 100vw;
 }
 .greeting-container-img{
-  background-image: url("../img_folder/pexels-photo.jpg");
+  background-image: url("../img_folder/pexels-photo.webp");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -26003,17 +26003,13 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var InitialSummary = function InitialSummary() {
+  // <p className="initial-summary-title">Hey, call me Chris.</p>
   return _react2.default.createElement(
     "div",
     { id: "about-me", className: "initial-summary-container" },
     _react2.default.createElement(
       "section",
       { className: "intial-section-wrapper" },
-      _react2.default.createElement(
-        "p",
-        { className: "initial-summary-title" },
-        "Hey, call me Chris."
-      ),
       _react2.default.createElement(
         "p",
         { className: "initial-summary-subtext" },
@@ -26296,19 +26292,23 @@ var Projects = function Projects() {
             null,
             "Code Sport"
           ),
-          _react2.default.createElement("img", { src: "img_folder/codeWars.png" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/codeSport.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindCode.webp" })
+          ),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
             _react2.default.createElement(
               "a",
-              { href: "https://sleepy-anchorage-74386.herokuapp.com" },
+              { target: "_blank", href: "https://sleepy-anchorage-74386.herokuapp.com" },
               "live site"
             ),
-            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/cjorda15/CodeSport" },
+              { target: "_blank", href: "https://github.com/cjorda15/CodeSport" },
               "github"
             )
           )
@@ -26328,7 +26328,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on mainly in a little less than two week period"
+            "First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on  in a little less than two week period"
           )
         )
       ),
@@ -26343,19 +26343,23 @@ var Projects = function Projects() {
             null,
             "New News"
           ),
-          _react2.default.createElement("img", { src: "img_folder/news.png" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/news.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindNews.webp" })
+          ),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
             _react2.default.createElement(
               "a",
-              { href: "https://obscure-headland-42499.herokuapp.com/" },
+              { target: "_blank", href: "https://obscure-headland-42499.herokuapp.com/" },
               "live site"
             ),
-            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/cjorda15/NewNews" },
+              { target: "_blank", href: "https://github.com/cjorda15/NewNews" },
               "github"
             )
           )
@@ -26375,7 +26379,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "This project consisted of react/redux, react-router, enzyme/jest for our test testing, express/node for our server, and knex.js/postgress for the backend. Worked on for a little over a week"
+            "This project consisted of react/redux, react-router, enzyme/jest for our testing, express/node for our server, and knex.js/postgress for the backend. Worked on for a little over a week"
           )
         )
       ),
@@ -26390,19 +26394,23 @@ var Projects = function Projects() {
             null,
             "Movie Tracker"
           ),
-          _react2.default.createElement("img", { src: "img_folder/movie.png" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/movie.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindMovie.webp" })
+          ),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
             _react2.default.createElement(
               "a",
-              { href: "https://jenn-peavler-movie-tracker.herokuapp.com" },
+              { target: "_blank", href: "https://jenn-peavler-movie-tracker.herokuapp.com" },
               "live site"
             ),
-            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/cjorda15/MovieTime" },
+              { target: "_blank", href: "https://github.com/cjorda15/MovieTime" },
               "github"
             )
           )
@@ -26437,19 +26445,23 @@ var Projects = function Projects() {
             null,
             "Weatherly"
           ),
-          _react2.default.createElement("img", { src: "img_folder/weathrly.png" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindWeathrly.webp" }),
+            _react2.default.createElement("img", { src: "img_folder/weathrly.webp" })
+          ),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
             _react2.default.createElement(
               "a",
-              { href: "https://stark-hamlet-69045.herokuapp.com" },
+              { target: "_blank", href: "https://stark-hamlet-69045.herokuapp.com" },
               "live site"
             ),
-            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/cjorda15/weathrly" },
+              { target: "_blank", href: "https://github.com/cjorda15/weathrly" },
               "github"
             )
           )
@@ -26484,19 +26496,18 @@ var Projects = function Projects() {
             null,
             "Static Comp Challenge"
           ),
-          _react2.default.createElement("img", { src: "img_folder/static-challenge.png" }),
+          _react2.default.createElement("img", { src: "img_folder/static-challenge.webp" }),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
             _react2.default.createElement(
               "a",
-              { href: "https://cjorda15.github.io/cj-comp-challenge-3/" },
+              { target: "_blank", href: "https://cjorda15.github.io/cj-comp-challenge-3/" },
               "live site"
             ),
-            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/cjorda15/cj-comp-challenge-3" },
+              { target: "_blank", href: "https://github.com/cjorda15/cj-comp-challenge-3" },
               "github"
             )
           )
@@ -26517,6 +26528,104 @@ var Projects = function Projects() {
             "p",
             null,
             "Simply using HTML5 and CSS"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "SPACE BREAKOUT"
+          ),
+          _react2.default.createElement("img", { src: "img_folder/space2.webp" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://evening-harbor-90728.herokuapp.com" },
+              "live site"
+            ),
+            " ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/cjorda15/space-invaders-" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Having fun with making Breakout: Space Version. First attempt at using the Canvas element for a game"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project had us more involved with testing and the canvas element over a period of four days."
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "old personal site"
+          ),
+          _react2.default.createElement("img", { src: "img_folder/oldSite.webp" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://peaceful-fjord-71465.herokuapp.com" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/cj-comp-challenge-3" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "My last personal site hosted on heroku with express and webpack setup and I guess needless react"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            " and other projects at "
+          ),
+          _react2.default.createElement(
+            "a",
+            { target: "_blank", href: "https://github.com/cjorda15" },
+            _react2.default.createElement("img", { id: "git-img", src: "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" })
           )
         )
       )

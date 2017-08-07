@@ -8,54 +8,72 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <h6>Code Sport</h6>
-          <img src="img_folder/codeWars.png"/>
+          <div className="project-img-holder">
+            <img src="img_folder/codeSport.webp"/>
+            <img className="project-additional-img" src="img_folder/behindCode.webp"/>
+          </div>
           <div className="project-link-container">
-            <a href="https://sleepy-anchorage-74386.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/CodeSport">github</a>
+            <a target="_blank" href="https://sleepy-anchorage-74386.herokuapp.com">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/CodeSport">github</a>
           </div>
         </div>
         <div className="project-middle-section">
           <p>Essentially trying to make coding a game or sport. Users can log in and attempt to answer a series of random questions that must be completed in javascript syntax in realtime with other challenged users. First one to get all coding questions wins! Users can create their own questions that can be used by the community for later use. (not quite finished, lots of things I want to expand on and improve here, but can do what I explained so far)</p>
         </div>
         <div className="project-bottom-section">
-          <p>This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on mainly in a little less than two week period</p>
+          <p>First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on  in a little less than two week period</p>
         </div>
       </div>
       <div className="project-content">
         <div className="project-top-section">
           <h6>New News</h6>
-          <img src="img_folder/news.png"/>
+          <div className="project-img-holder">
+          <img src="img_folder/news.webp"/>
+          <img className="project-additional-img" src="img_folder/behindNews.webp"/>
+          </div>
           <div className="project-link-container">
-            <a href="https://obscure-headland-42499.herokuapp.com/">live site</a> <a href="https://github.com/cjorda15/NewNews">github</a>
+            <a target="_blank" href="https://obscure-headland-42499.herokuapp.com/">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/NewNews">github</a>
           </div>
         </div>
         <div className="project-middle-section">
           <p>An API that fetches the most popular articles from scores of the most popular news sources. Articles can be saved to be seen later, linked to where article is found, and voted on as leaning towards being conservative or liberal that will later be used in searches on the basis of its liberal to conservative values.</p>
         </div>
         <div className="project-bottom-section">
-          <p>This project consisted of react/redux, react-router, enzyme/jest for our test testing, express/node for our server, and knex.js/postgress for the backend. Worked on for a little over a week</p>
+          <p>This project consisted of react/redux, react-router, enzyme/jest for our testing, express/node for our server, and knex.js/postgress for the backend. Worked on for a little over a week</p>
         </div>
       </div>
       <div className="project-content">
         <div className="project-top-section">
           <h6>Movie Tracker</h6>
-          <img src="img_folder/movie.png"/>
+          <div className="project-img-holder">
+            <img src="img_folder/movie.webp"/>
+            <img className="project-additional-img" src="img_folder/behindMovie.webp"/>
+          </div>
           <div className="project-link-container">
-            <a href="https://jenn-peavler-movie-tracker.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/MovieTime">github</a>
+            <a target="_blank" href="https://jenn-peavler-movie-tracker.herokuapp.com">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/MovieTime">github</a>
           </div>
         </div>
         <div className="project-middle-section">
           <p>This project involved listing the most recent movies out in theaters with the ability to save favorites for later use and well as see fuller details on movies.</p>
         </div>
         <div className="project-bottom-section">
-          <p>This project is working off the The Movie DB API (www.themoviedb.org/documentation/api). It uses a React/Redux front end with react-router and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days</p>
+          <p>This project is working off the The Movie DB API
+          (www.themoviedb.org/documentation/api). It uses a React/Redux front end with react-router
+          and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days</p>
         </div>
       </div>
       <div className="project-content">
         <div className="project-top-section">
           <h6>Weatherly</h6>
-          <img src="img_folder/weathrly.png"/>
+          <div className="project-img-holder">
+            <img className="project-additional-img" src="img_folder/behindWeathrly.webp"/>
+            <img src="img_folder/weathrly.webp"/>
+          </div>
           <div className="project-link-container">
-            <a href="https://stark-hamlet-69045.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/weathrly">github</a>
+            <a target="_blank" href="https://stark-hamlet-69045.herokuapp.com">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/weathrly">github</a>
           </div>
         </div>
         <div className="project-middle-section">
@@ -69,9 +87,10 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <h6>Static Comp Challenge</h6>
-          <img src="img_folder/static-challenge.png"/>
+          <img src="img_folder/static-challenge.webp"/>
           <div className="project-link-container">
-            <a href="https://cjorda15.github.io/cj-comp-challenge-3/">live site</a> <a href="https://github.com/cjorda15/cj-comp-challenge-3">github</a>
+            <a target="_blank" href="https://cjorda15.github.io/cj-comp-challenge-3/">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/cj-comp-challenge-3">github</a>
           </div>
         </div>
         <div className="project-middle-section">
@@ -81,7 +100,42 @@ const Projects = () => {
           <p>Simply using HTML5 and CSS</p>
         </div>
       </div>
+      <div className="project-content">
+        <div className="project-top-section">
+          <h6>SPACE BREAKOUT</h6>
+          <img src="img_folder/space2.webp"/>
+          <div className="project-link-container">
+            <a href="https://evening-harbor-90728.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/space-invaders-">github</a>
+          </div>
+        </div>
+        <div className="project-middle-section">
+          <p>Having fun with making Breakout: Space Version. First attempt at using the Canvas element for a game</p>
+        </div>
+        <div className="project-bottom-section">
+          <p>This project had us more involved with testing and the canvas element over a period of four days.
+          </p>
+        </div>
+      </div>
+      <div className="project-content">
+        <div className="project-top-section">
+          <h6>old personal site</h6>
+          <img src="img_folder/oldSite.webp"/>
+          <div className="project-link-container">
+            <a target="_blank" href="https://peaceful-fjord-71465.herokuapp.com">live site</a>
+            <a target="_blank" href="https://github.com/cjorda15/cj-comp-challenge-3">github</a>
+          </div>
+        </div>
+        <div className="project-middle-section">
+          <p>My last personal site hosted on heroku with express and webpack setup and I guess needless react</p>
+        </div>
+        <div className="project-bottom-section">
+        <p> and other projects at </p>
+          <a target="_blank" href="https://github.com/cjorda15"><img id="git-img" src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png"/></a>
+
+        </div>
+      </div>
      </div>
+
     </section>
   )
 }
