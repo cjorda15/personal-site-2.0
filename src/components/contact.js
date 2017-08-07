@@ -1,0 +1,11 @@
+import React from 'contact'
+
+const Contact = () => {
+  return(
+    <div className="contact-container">
+      <
+    </div>
+  )
+}
+
+export default Contact

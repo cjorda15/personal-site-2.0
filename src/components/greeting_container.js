@@ -7,7 +7,6 @@ const GreetingContainer = () => {
         <div className='greeting-main'>
           <p className="greeting-main-text">Christopher Jordan</p>
           <span id="greeting-line-animation-1"></span>
-          <span id="greeting-line-animation-2"></span>
           <p className="greeting-main-subtext">Front End Engineer</p>
         </div>
       </div>

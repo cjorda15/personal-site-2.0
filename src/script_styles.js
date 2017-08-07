@@ -22,7 +22,6 @@ $(function(){
   const activateNav = () => {
     $navLinks.toggle('nav-links-active');
      $('#greeting-line-animation-1').toggle();
-     $('#greeting-line-animation-2').toggle();
 }
 
  $navBar.hover(

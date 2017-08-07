@@ -25920,15 +25920,6 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
-          { href: "#resume" },
-          "resume"
-        )
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        _react2.default.createElement(
-          "a",
           { href: "#contact" },
           "contact"
         )
@@ -25972,7 +25963,6 @@ var GreetingContainer = function GreetingContainer() {
           "Christopher Jordan"
         ),
         _react2.default.createElement("span", { id: "greeting-line-animation-1" }),
-        _react2.default.createElement("span", { id: "greeting-line-animation-2" }),
         _react2.default.createElement(
           "p",
           { className: "greeting-main-subtext" },
@@ -26219,20 +26209,6 @@ var SideNavBar = function (_Component) {
             null,
             _react2.default.createElement(
               "a",
-              { className: "side-nav-link", href: "#resume" },
-              _react2.default.createElement(
-                "span",
-                { className: "side-nav-text", style: linkStyle },
-                "resume"
-              ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
-            )
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            _react2.default.createElement(
-              "a",
               { className: "side-nav-link", href: "#contact" },
               _react2.default.createElement(
                 "span",
@@ -26328,7 +26304,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on  in a little less than two week period"
+            "First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on for a little less than a two week period"
           )
         )
       ),
@@ -26481,7 +26457,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "This project involved react, webpack, and further testing with mocha and enzyme."
+            "This project involved react, webpack, and further testing with mocha and enzyme over a period of four days."
           )
         )
       ),
@@ -26620,12 +26596,31 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            " and other projects at "
+            " other projects can be found at "
           ),
           _react2.default.createElement(
             "a",
             { target: "_blank", href: "https://github.com/cjorda15" },
             _react2.default.createElement("img", { id: "git-img", src: "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" })
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "resume-container" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Resume!"
+          ),
+          _react2.default.createElement(
+            "a",
+            { href: "chris_jordan_resume" },
+            "download zip file here"
+          ),
+          _react2.default.createElement(
+            "a",
+            { href: "https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf" },
+            " or view it from github"
           )
         )
       )
@@ -26673,7 +26668,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var activateNav = function activateNav() {
     $navLinks.toggle('nav-links-active');
     (0, _jquery2.default)('#greeting-line-animation-1').toggle();
-    (0, _jquery2.default)('#greeting-line-animation-2').toggle();
   };
 
   $navBar.hover(function () {

@@ -38,7 +38,7 @@
   text-shadow: 0.6px 0.4px 0.2px #000;
 }
 
-#greeting-line-animation-1, #greeting-line-animation-2{
+#greeting-line-animation-1{
   animation-delay:0s;
   animation-fill-mode: forwards;
   background-color: #00b7c7;
@@ -54,16 +54,18 @@
 
 }
 
-#greeting-line-animation-2{
-  animation: line2 1.5s;
-  top:441px;
 
-}
 
 .greeting-main-subtext{
   color: #000;
   text-shadow: 0.1px 0.4px 0.2px #fff;
   z-index: 3
+}
+
+.resume-container{
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
 }
 
 
@@ -87,7 +89,7 @@
 
 
     100% {
-      top:441px;
+      top:58%;
     }
 }
 

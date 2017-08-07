@@ -21,7 +21,7 @@ const Projects = () => {
           <p>Essentially trying to make coding a game or sport. Users can log in and attempt to answer a series of random questions that must be completed in javascript syntax in realtime with other challenged users. First one to get all coding questions wins! Users can create their own questions that can be used by the community for later use. (not quite finished, lots of things I want to expand on and improve here, but can do what I explained so far)</p>
         </div>
         <div className="project-bottom-section">
-          <p>First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on  in a little less than two week period</p>
+          <p>First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on for a little less than a two week period</p>
         </div>
       </div>
       <div className="project-content">
@@ -80,7 +80,7 @@ const Projects = () => {
           <p>Weathrly is the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground’s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application.</p>
         </div>
         <div className="project-bottom-section">
-          <p>This project involved react, webpack, and further testing with mocha and enzyme.
+          <p>This project involved react, webpack, and further testing with mocha and enzyme over a period of four days.
           </p>
         </div>
       </div>
@@ -129,11 +129,16 @@ const Projects = () => {
           <p>My last personal site hosted on heroku with express and webpack setup and I guess needless react</p>
         </div>
         <div className="project-bottom-section">
-        <p> and other projects at </p>
+        <p> other projects can be found at </p>
           <a target="_blank" href="https://github.com/cjorda15"><img id="git-img" src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png"/></a>
-
+        </div>
+        <div className='resume-container'>
+          <p>Resume!</p>
+          <a href="chris_jordan_resume">download zip file here</a>
+          <a  href="https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf"> or view it from github</a>
         </div>
       </div>
+
      </div>
 
     </section>
