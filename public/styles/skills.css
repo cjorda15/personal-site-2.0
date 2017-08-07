@@ -65,32 +65,32 @@ font-family: 'Quicksand', sans-serif;
 .skill-reminder-msg{
   position: absolute;
   top:20px;
-  
+
 }
 
 .skill-animate-1{
-  background: #FF0000 !important;
+  background: #FF851B !important;
 }
 .skill-animate-2{
-  background:#E2571E !important;
+  background:#9C0000 !important;
 }
 .skill-animate-3{
-  background:#FF7F00 !important;
+  background:#01FF70 !important;
 }
 .skill-animate-4{
-  background:#FFFF00 !important;
+  background:#39CCCC !important;
 }
 .skill-animate-5{
-  background:#00FF00 !important;
+  background:#2ECC40 !important;
 }
 .skill-animate-6{
-  background:#96bf33 !important;
+  background:#FFDC00 !important;
 }
 .skill-animate-7{
-  background:#0000FF !important;
+  background:#0074D9 !important;
 }
 .skill-animate-8{
-  background:#4B0082 !important;
+  background:#F012BE !important;
 }
 .skill-animate-9{
   background:#8B00FF !important;

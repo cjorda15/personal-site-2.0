@@ -26264,15 +26264,15 @@ var Projects = function Projects() {
           "div",
           { className: "project-top-section" },
           _react2.default.createElement(
-            "h6",
-            null,
-            "Code Sport"
-          ),
-          _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
             _react2.default.createElement("img", { src: "img_folder/codeSport.webp" }),
             _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindCode.webp" })
+          ),
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Code Sport"
           ),
           _react2.default.createElement(
             "div",
@@ -26315,15 +26315,15 @@ var Projects = function Projects() {
           "div",
           { className: "project-top-section" },
           _react2.default.createElement(
-            "h6",
-            null,
-            "New News"
-          ),
-          _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
             _react2.default.createElement("img", { src: "img_folder/news.webp" }),
             _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindNews.webp" })
+          ),
+          _react2.default.createElement(
+            "h6",
+            null,
+            "New News"
           ),
           _react2.default.createElement(
             "div",
@@ -26366,15 +26366,15 @@ var Projects = function Projects() {
           "div",
           { className: "project-top-section" },
           _react2.default.createElement(
-            "h6",
-            null,
-            "Movie Tracker"
-          ),
-          _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
             _react2.default.createElement("img", { src: "img_folder/movie.webp" }),
             _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindMovie.webp" })
+          ),
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Movie Tracker"
           ),
           _react2.default.createElement(
             "div",
@@ -26417,15 +26417,15 @@ var Projects = function Projects() {
           "div",
           { className: "project-top-section" },
           _react2.default.createElement(
-            "h6",
-            null,
-            "Weatherly"
-          ),
-          _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
             _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindWeathrly.webp" }),
             _react2.default.createElement("img", { src: "img_folder/weathrly.webp" })
+          ),
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Weatherly"
           ),
           _react2.default.createElement(
             "div",
@@ -26467,12 +26467,12 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
+          _react2.default.createElement("img", { src: "img_folder/static-challenge.webp" }),
           _react2.default.createElement(
             "h6",
             null,
             "Static Comp Challenge"
           ),
-          _react2.default.createElement("img", { src: "img_folder/static-challenge.webp" }),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
@@ -26513,12 +26513,12 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
+          _react2.default.createElement("img", { src: "img_folder/space2.webp" }),
           _react2.default.createElement(
             "h6",
             null,
             "SPACE BREAKOUT"
           ),
-          _react2.default.createElement("img", { src: "img_folder/space2.webp" }),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },
@@ -26560,12 +26560,12 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
+          _react2.default.createElement("img", { src: "img_folder/oldSite.webp" }),
           _react2.default.createElement(
             "h6",
             null,
             "old personal site"
           ),
-          _react2.default.createElement("img", { src: "img_folder/oldSite.webp" }),
           _react2.default.createElement(
             "div",
             { className: "project-link-container" },

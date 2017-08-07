@@ -2,7 +2,7 @@
   background: #1b1b1b;
 }
 
-.projects-title{
+.projects-title, .resume-container p{
   border-bottom: #00b7c7 3px solid;
   color: #fff;
   display: inline-block;
@@ -56,11 +56,12 @@
 }
 
 .project-link-container{
+  background: #1b1b1b;
   margin: 35px 0px;
+  position: absolute;
 }
 
 .project-link-container a{
-  background: #FCFCFD;
   border: 4px solid #00b7c7;
   color: #00b7c7;
   font-family: 'Quicksand', sans-serif;
@@ -95,10 +96,27 @@
   height:101%;
 }
 
-.resume-container p{
+.resume-container{
+  flex-direction: column;
+  display: flex;
+}
+
+.resume-container a {
+  border: 4px solid #00b7c7;
   color: #00b7c7;
-    font-size: 36px;
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  width: 270px;
+}
+
+.resume-container a:hover {
+  background: #00b7c7;
+  border: 4px solid #fff;
+  color: #FCFCFD;
+  transition: all .6s;
 }
 
 #git-img{

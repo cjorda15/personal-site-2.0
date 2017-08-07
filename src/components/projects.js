@@ -7,11 +7,11 @@ const Projects = () => {
      <div className="projects-container">
       <div className="project-content">
         <div className="project-top-section">
-          <h6>Code Sport</h6>
           <div className="project-img-holder">
             <img src="img_folder/codeSport.webp"/>
             <img className="project-additional-img" src="img_folder/behindCode.webp"/>
           </div>
+          <h6>Code Sport</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://sleepy-anchorage-74386.herokuapp.com">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/CodeSport">github</a>
@@ -26,11 +26,11 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>New News</h6>
           <div className="project-img-holder">
           <img src="img_folder/news.webp"/>
           <img className="project-additional-img" src="img_folder/behindNews.webp"/>
           </div>
+          <h6>New News</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://obscure-headland-42499.herokuapp.com/">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/NewNews">github</a>
@@ -45,11 +45,11 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>Movie Tracker</h6>
           <div className="project-img-holder">
             <img src="img_folder/movie.webp"/>
             <img className="project-additional-img" src="img_folder/behindMovie.webp"/>
           </div>
+          <h6>Movie Tracker</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://jenn-peavler-movie-tracker.herokuapp.com">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/MovieTime">github</a>
@@ -66,11 +66,11 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>Weatherly</h6>
           <div className="project-img-holder">
             <img className="project-additional-img" src="img_folder/behindWeathrly.webp"/>
             <img src="img_folder/weathrly.webp"/>
           </div>
+          <h6>Weatherly</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://stark-hamlet-69045.herokuapp.com">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/weathrly">github</a>
@@ -86,8 +86,8 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>Static Comp Challenge</h6>
           <img src="img_folder/static-challenge.webp"/>
+          <h6>Static Comp Challenge</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://cjorda15.github.io/cj-comp-challenge-3/">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/cj-comp-challenge-3">github</a>
@@ -102,8 +102,8 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>SPACE BREAKOUT</h6>
           <img src="img_folder/space2.webp"/>
+          <h6>SPACE BREAKOUT</h6>
           <div className="project-link-container">
             <a href="https://evening-harbor-90728.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/space-invaders-">github</a>
           </div>
@@ -118,8 +118,8 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <h6>old personal site</h6>
           <img src="img_folder/oldSite.webp"/>
+          <h6>old personal site</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://peaceful-fjord-71465.herokuapp.com">live site</a>
             <a target="_blank" href="https://github.com/cjorda15/cj-comp-challenge-3">github</a>
