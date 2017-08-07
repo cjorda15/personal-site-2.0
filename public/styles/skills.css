@@ -45,23 +45,6 @@ font-family: 'Quicksand', sans-serif;
 
 }
 
-
-.animate-right:hover{
-    /*color:#fff;
-    cursor: default;
-    text-shadow: 2px 2px 2px #1b1b1b;
-    transform: rotate(360deg);
-    transition: all 1s ease-in-out 0s;*/
-}
-
-.animate-left:hover{
-    /*color:#fff;
-    font-size: 25px;
-    cursor: default;
-    text-shadow: 2px 2px 2px #1b1b1b;*/
-
-}
-
 .skill-animate-1,.skill-animate-3,.skill-animate-5,
 .skill-animate-7,.skill-animate-9{
   color:#fff;
@@ -77,6 +60,12 @@ font-family: 'Quicksand', sans-serif;
   font-size: 22px;
   transform: rotate(360deg);
   transition: all 1s ease-in-out 0s;
+}
+
+.skill-reminder-msg{
+  position: absolute;
+  top:20px;
+  
 }
 
 .skill-animate-1{

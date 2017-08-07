@@ -9,6 +9,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.15.3",
+    "imagemin": "^5.3.1",
+    "imagemin-webp": "^4.0.0",
     "jquery": "^3.2.1",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
@@ -24,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "killall -9 node && node server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

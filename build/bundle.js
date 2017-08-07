@@ -26003,17 +26003,13 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var InitialSummary = function InitialSummary() {
+  // <p className="initial-summary-title">Hey, call me Chris.</p>
   return _react2.default.createElement(
     "div",
     { id: "about-me", className: "initial-summary-container" },
     _react2.default.createElement(
       "section",
       { className: "intial-section-wrapper" },
-      _react2.default.createElement(
-        "p",
-        { className: "initial-summary-title" },
-        "Hey, call me Chris."
-      ),
       _react2.default.createElement(
         "p",
         { className: "initial-summary-subtext" },
@@ -26068,48 +26064,48 @@ var Skills = function Skills() {
       { className: 'skill-flex-container' },
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-left' },
+        { className: 'skill-flex-item' },
         'JavaScript'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-right' },
+        { className: 'skill-flex-item ' },
         'HTLM5'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-left' },
+        { className: 'skill-flex-item ' },
         'CC3'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-right' },
+        { className: 'skill-flex-item ' },
         'React/Redux'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-left' },
+        { className: 'skill-flex-item ' },
         'Express/Node'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-right' },
+        { className: 'skill-flex-item ' },
         'Knex.js'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-left' },
+        { className: 'skill-flex-item ' },
         'SEO'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-right' },
+        { className: 'skill-flex-item ' },
         'Responsive Design'
       ),
       _react2.default.createElement(
         'div',
-        { className: 'skill-flex-item animate-left' },
-        'GitHub'
+        { className: 'skill-flex-item ' },
+        'jQuery'
       )
     )
   );
@@ -26276,7 +26272,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Projects = function Projects() {
   return _react2.default.createElement(
     "section",
-    { className: "projects" },
+    { id: "projects", className: "projects" },
     _react2.default.createElement(
       "h6",
       { className: "projects-title" },
@@ -26285,7 +26281,354 @@ var Projects = function Projects() {
     _react2.default.createElement(
       "div",
       { className: "projects-container" },
-      _react2.default.createElement("div", { className: "project" })
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Code Sport"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/codeSport.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindCode.webp" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://sleepy-anchorage-74386.herokuapp.com" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/CodeSport" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Essentially trying to make coding a game or sport. Users can log in and attempt to answer a series of random questions that must be completed in javascript syntax in realtime with other challenged users. First one to get all coding questions wins! Users can create their own questions that can be used by the community for later use. (not quite finished, lots of things I want to expand on and improve here, but can do what I explained so far)"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "First attempt with websockets on this level. This consisted of knex.js, mongo, react/redux, websocket.io, postgress, and more. Worked on  in a little less than two week period"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "New News"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/news.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindNews.webp" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://obscure-headland-42499.herokuapp.com/" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/NewNews" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "An API that fetches the most popular articles from scores of the most popular news sources. Articles can be saved to be seen later, linked to where article is found, and voted on as leaning towards being conservative or liberal that will later be used in searches on the basis of its liberal to conservative values."
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project consisted of react/redux, react-router, enzyme/jest for our testing, express/node for our server, and knex.js/postgress for the backend. Worked on for a little over a week"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Movie Tracker"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { src: "img_folder/movie.webp" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindMovie.webp" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://jenn-peavler-movie-tracker.herokuapp.com" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/MovieTime" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project involved listing the most recent movies out in theaters with the ability to save favorites for later use and well as see fuller details on movies."
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project is working off the The Movie DB API (www.themoviedb.org/documentation/api). It uses a React/Redux front end with react-router and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Weatherly"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-img-holder" },
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindWeathrly.webp" }),
+            _react2.default.createElement("img", { src: "img_folder/weathrly.webp" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://stark-hamlet-69045.herokuapp.com" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/weathrly" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Weathrly is the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground\u2019s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application."
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project involved react, webpack, and further testing with mocha and enzyme."
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "Static Comp Challenge"
+          ),
+          _react2.default.createElement("img", { src: "img_folder/static-challenge.webp" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://cjorda15.github.io/cj-comp-challenge-3/" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/cj-comp-challenge-3" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Just one of my first css challenges with the use of flex-box and other nice to know features of CSS3"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Simply using HTML5 and CSS"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "SPACE BREAKOUT"
+          ),
+          _react2.default.createElement("img", { src: "img_folder/space2.webp" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://evening-harbor-90728.herokuapp.com" },
+              "live site"
+            ),
+            " ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/cjorda15/space-invaders-" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Having fun with making Breakout: Space Version. First attempt at using the Canvas element for a game"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "This project had us more involved with testing and the canvas element over a period of four days."
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "project-content" },
+        _react2.default.createElement(
+          "div",
+          { className: "project-top-section" },
+          _react2.default.createElement(
+            "h6",
+            null,
+            "old personal site"
+          ),
+          _react2.default.createElement("img", { src: "img_folder/oldSite.webp" }),
+          _react2.default.createElement(
+            "div",
+            { className: "project-link-container" },
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://peaceful-fjord-71465.herokuapp.com" },
+              "live site"
+            ),
+            _react2.default.createElement(
+              "a",
+              { target: "_blank", href: "https://github.com/cjorda15/cj-comp-challenge-3" },
+              "github"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-middle-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "My last personal site hosted on heroku with express and webpack setup and I guess needless react"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "project-bottom-section" },
+          _react2.default.createElement(
+            "p",
+            null,
+            " and other projects at "
+          ),
+          _react2.default.createElement(
+            "a",
+            { target: "_blank", href: "https://github.com/cjorda15" },
+            _react2.default.createElement("img", { id: "git-img", src: "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" })
+          )
+        )
+      )
     )
   );
 };
@@ -26376,7 +26719,7 @@ function isElementInViewport(elem, type) {
   var viewportBottom = type === 1 || 3 ? viewportTop + (0, _jquery2.default)(window).height() - 50 : viewportTop + (0, _jquery2.default)(window).height();
 
   var elemTop = Math.round($elem.offset().top);
-  var elemBottom = type === 3 ? elemTop + $elem.height() + 1000 : elemTop + $elem.height();
+  var elemBottom = type === 3 ? elemTop + $elem.height() + 10000 : elemTop + $elem.height();
 
   return elemTop < viewportBottom && elemBottom > viewportTop;
 }
@@ -26414,12 +26757,12 @@ var checkSideBar = function checkSideBar() {
 
 var jump = function jump(e) {
   if (e) {
-    e.preventDefault();
     var target = (0, _jquery2.default)(this).parents('.side-nav-link').prevObject[0].getAttribute('href');
   } else {
     var target = location.hash;
   }
-
+  if (target.indexOf("http") == 0) return;
+  //  e.preventDefault();
   (0, _jquery2.default)('html,body').animate({
     scrollTop: (0, _jquery2.default)(target).offset().top
   }, 1500, function () {});
