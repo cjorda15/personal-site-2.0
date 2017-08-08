@@ -1,0 +1,133 @@
+.contact-container{
+  background-image:url('../img_folder/blurred_ora.jpg');
+  background-size: cover;
+  border-top: 3px solid #D96800;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.contact-container h6{
+  border-bottom: #00b7c7 3px solid;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 44px;
+  margin-left: 30px;
+}
+
+.contact-links{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  position: absolute;
+  top: 23%;
+  width: 100%;
+}
+
+.contact-links a{
+  width: 75px;
+  height: 75px;
+}
+
+
+ #link-1{
+animation: link-1 30s;
+animation-delay:0s;
+animation-iteration-count: infinite;
+}
+ #link-2{
+animation: link-2 30s;
+animation-delay:0s;
+animation-iteration-count: infinite;
+}
+ #link-3{
+animation: link-3 20s;
+animation-delay:0s;
+animation-iteration-count: infinite;
+}
+ #link-4{
+animation: link-4 20s;
+animation-delay:0s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes link-1 {
+    0%   {
+      order: 1
+         }
+   25% {
+     order: 2
+   }
+   50%{
+     order:3
+   }
+
+   75%{
+     order:4
+   }
+
+    100% {
+      order:1;
+    }
+}
+@keyframes link-2 {
+    0%   {
+      order: 2
+         }
+   25% {
+     order: 3
+   }
+   50%{
+     order:4
+   }
+
+   75%{
+     order:1
+   }
+
+    100% {
+      order:2;
+    }
+}
+@keyframes link-3 {
+    0%   {
+      order: 3
+         }
+   25% {
+     order: 4
+   }
+   50%{
+     order:1
+   }
+
+   75%{
+     order:2
+   }
+
+    100% {
+      order:3;
+    }
+}
+@keyframes link-4 {
+    0%   {
+      order: 4
+         }
+   25% {
+     order: 1
+   }
+   50%{
+     order:2
+   }
+
+   75%{
+     order:3
+   }
+
+    100% {
+      order:4;
+    }
+}

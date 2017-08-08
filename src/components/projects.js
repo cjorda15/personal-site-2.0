@@ -59,8 +59,7 @@ const Projects = () => {
           <p>This project involved listing the most recent movies out in theaters with the ability to save favorites for later use and well as see fuller details on movies.</p>
         </div>
         <div className="project-bottom-section">
-          <p>This project is working off the The Movie DB API
-          (www.themoviedb.org/documentation/api). It uses a React/Redux front end with react-router
+          <p>This project is working off the The Movie DB API. It uses a React/Redux front end with react-router
           and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days</p>
         </div>
       </div>
@@ -77,7 +76,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-middle-section">
-          <p>Weathrly is the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground’s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application.</p>
+          <p>Weathrly was the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground’s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application.</p>
         </div>
         <div className="project-bottom-section">
           <p>This project involved react, webpack, and further testing with mocha and enzyme over a period of four days.
@@ -132,15 +131,15 @@ const Projects = () => {
         <p> other projects can be found at </p>
           <a target="_blank" href="https://github.com/cjorda15"><img id="git-img" src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png"/></a>
         </div>
-        <div className='resume-container'>
-          <p>Resume!</p>
-          <a href="chris_jordan_resume">download zip file here</a>
-          <a  href="https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf"> or view it from github</a>
-        </div>
+
       </div>
 
      </div>
-
+     <div id="resume" className='resume-container'>
+       <p>Resume</p>
+       <a href="chris_jordan_resume">download zip file here</a>
+       <a  href="https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf"> or view it from github</a>
+     </div>
     </section>
   )
 }

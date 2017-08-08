@@ -25791,6 +25791,10 @@ var _projects = __webpack_require__(232);
 
 var _projects2 = _interopRequireDefault(_projects);
 
+var _contact = __webpack_require__(235);
+
+var _contact2 = _interopRequireDefault(_contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -25802,7 +25806,8 @@ var App = function App() {
     _react2.default.createElement(_greeting_container2.default, null),
     _react2.default.createElement(_inital_summary2.default, null),
     _react2.default.createElement(_skills2.default, null),
-    _react2.default.createElement(_projects2.default, null)
+    _react2.default.createElement(_projects2.default, null),
+    _react2.default.createElement(_contact2.default, null)
   );
 };
 
@@ -25920,6 +25925,15 @@ var navBar = function navBar() {
         null,
         _react2.default.createElement(
           "a",
+          { href: "#resume" },
+          "resume"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
           { href: "#contact" },
           "contact"
         )
@@ -26015,7 +26029,12 @@ var InitialSummary = function InitialSummary() {
       _react2.default.createElement(
         "p",
         { className: "inital-summary-description" },
-        " I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program, we begin by building skills in HTML5, CSS3, and Design Fundamentals. We continued laying a solid foundation in core Javascript with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with Node/express and SQL. In total, FEE graduates have the skills to turn design comps into working applications."
+        " I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, Javascript, JQuery, and Design Fundamentals."
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "inital-summary-description" },
+        "I continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js."
       )
     )
   );
@@ -26200,6 +26219,20 @@ var SideNavBar = function (_Component) {
                 "span",
                 { className: "side-nav-text", style: linkStyle },
                 "projects"
+              ),
+              _react2.default.createElement("span", { className: "side-nav-dot" })
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { className: "side-nav-link", href: "#resume" },
+              _react2.default.createElement(
+                "span",
+                { className: "side-nav-text", style: linkStyle },
+                "resume"
               ),
               _react2.default.createElement("span", { className: "side-nav-dot" })
             )
@@ -26406,7 +26439,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "This project is working off the The Movie DB API (www.themoviedb.org/documentation/api). It uses a React/Redux front end with react-router and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days"
+            "This project is working off the The Movie DB API. It uses a React/Redux front end with react-router and an Express/node working with  knex.js/Posgresql as our backend. Worked on for four days"
           )
         )
       ),
@@ -26448,7 +26481,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "Weathrly is the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground\u2019s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application."
+            "Weathrly was the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground\u2019s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application."
           )
         ),
         _react2.default.createElement(
@@ -26603,26 +26636,26 @@ var Projects = function Projects() {
             { target: "_blank", href: "https://github.com/cjorda15" },
             _react2.default.createElement("img", { id: "git-img", src: "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" })
           )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "resume-container" },
-          _react2.default.createElement(
-            "p",
-            null,
-            "Resume!"
-          ),
-          _react2.default.createElement(
-            "a",
-            { href: "chris_jordan_resume" },
-            "download zip file here"
-          ),
-          _react2.default.createElement(
-            "a",
-            { href: "https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf" },
-            " or view it from github"
-          )
         )
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { id: "resume", className: "resume-container" },
+      _react2.default.createElement(
+        "p",
+        null,
+        "Resume"
+      ),
+      _react2.default.createElement(
+        "a",
+        { href: "chris_jordan_resume" },
+        "download zip file here"
+      ),
+      _react2.default.createElement(
+        "a",
+        { href: "https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf" },
+        " or view it from github"
       )
     )
   );
@@ -37021,6 +37054,61 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contact = function Contact() {
+  return _react2.default.createElement(
+    "div",
+    { id: "contact", className: "contact-container" },
+    _react2.default.createElement(
+      "h6",
+      null,
+      "Contact"
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "contact-links" },
+      _react2.default.createElement(
+        "a",
+        { id: "link-1", src: "#" },
+        _react2.default.createElement("img", { src: "img_folder/email.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { id: "link-2" },
+        _react2.default.createElement("img", { src: "img_folder/Phone.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { id: "link-3" },
+        _react2.default.createElement("img", { src: "img_folder/GitHub.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { id: "link-4" },
+        _react2.default.createElement("img", { src: "img_folder/LinkedIn.png" })
+      )
+    )
+  );
+};
+
+exports.default = Contact;
 
 /***/ })
 /******/ ]);

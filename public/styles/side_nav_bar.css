@@ -20,7 +20,7 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  max-height: 40px;
+  max-height: 48px;
   padding-top: 10px;
   text-decoration: none;
 }
@@ -53,14 +53,14 @@
   background: rgba(255,255,255,.25);
   border-radius: 50%;
   display: inline-block;
-  height: 35px;
-  width: 35px;
+  height: 42px;
+  width: 42px;
 }
 .side-nav-dot-active{
   background: #00b7c7;
-  height: 40px;
+  height: 44px;
   transition: .4s;
-  width: 40px;
+  width: 44px;
 }
 
 .show-side-nav{

@@ -12,7 +12,8 @@ const InitialSummary = () => {
     </div>
     <section className="intial-summary-description-container">
       <span className="initial-summary-line-2"></span>
-      <p className="inital-summary-description"> I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Front-End Engineering program, we begin by building skills in HTML5, CSS3, and Design Fundamentals. We continued laying a solid foundation in core Javascript with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with Node/express and SQL. In total, FEE graduates have the skills to turn design comps into working applications.
+      <p className="inital-summary-description"> I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, Javascript, JQuery, and Design Fundamentals.</p> 
+      <p className="inital-summary-description">I continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js.
       </p>
     </section>
   </div>

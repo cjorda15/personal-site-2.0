@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname,"public/index.html"))
 })
 
+app.get('/chris_jordan_resume', (req,res) => {
+  res.sendFile(path.join(__dirname, "public/chris_jordan_resume.zip"))
+
+})
+
 app.use(express.static(path.join(__dirname,"public")))
 app.use("/build", express.static(path.join(__dirname,"build")))
 

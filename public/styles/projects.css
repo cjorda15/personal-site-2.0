@@ -27,7 +27,7 @@
   max-width: 900px;
   margin: 60px auto 0px;
   min-width: 300px;
-  width:85%;
+  width:83%;
 }
 
 .project-top-section{
@@ -40,6 +40,7 @@
   width: 100%;
 }
 .project-top-section h6{
+  border-bottom: 3px solid #fff;
   color:  #00b7c7;
   font-size: 36px;
   font-family: 'Quicksand', sans-serif;
@@ -99,6 +100,7 @@
 .resume-container{
   flex-direction: column;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .resume-container a {

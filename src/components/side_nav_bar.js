@@ -36,6 +36,12 @@ class SideNavBar extends Component {
              <span className="side-nav-dot"></span>
            </a>
          </li>
+         <li>
+          <a className="side-nav-link" href="#resume">
+            <span className="side-nav-text" style={linkStyle}>resume</span>
+            <span className="side-nav-dot"></span>
+          </a>
+        </li>
           <li>
            <a className="side-nav-link" href="#contact">
              <span className="side-nav-text" style={linkStyle}>contact</span>
