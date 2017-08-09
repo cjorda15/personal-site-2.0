@@ -61,13 +61,13 @@ right: 0px;
 
 .start-line-3{
   animation: line-3 3s;
-  background: red;
+  background: #00b7c7;
 
 }
 
 .start-line-4{
   animation: line-4 7s;
-  background: red;
+  background: #00b7c7;
 }
 
 @keyframes line-3 {
@@ -81,7 +81,7 @@ right: 0px;
     }
 
     100% {
-      background: red;
+      background: #00b7c7;
       left:0px;
 
     }
@@ -98,7 +98,7 @@ right: 0px;
    }
 
     100% {
-      background: red;
+      background: #00b7c7;
       right:0px;
     }
 }

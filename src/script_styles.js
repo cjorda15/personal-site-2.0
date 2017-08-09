@@ -113,8 +113,8 @@ const checkLocation = () => {
   const dot5 = $('#dot-5')
   const dot6 = $('#dot-6')
   const track = dot1.offset().top
-console.log(track)
-    if(814<track&&track<2499){
+
+  if(814<track&&track<2399){
       dot2.addClass('side-nav-dot-active')
       dot3.removeClass('side-nav-dot-active')
       dot4.removeClass('side-nav-dot-active')
@@ -122,45 +122,39 @@ console.log(track)
       dot6.removeClass('side-nav-dot-active')
     }
 
-    if(2499<track&&track<2910){
-      dot2.removeClass('side-nav-dot-active')
-      dot3.addClass('side-nav-dot-active')
-      dot4.removeClass('side-nav-dot-active')
-      dot5.removeClass('side-nav-dot-active')
-      dot6.removeClass('side-nav-dot-active')
+  if(2399<track&&track<2810){
+    dot2.removeClass('side-nav-dot-active')
+    dot3.addClass('side-nav-dot-active')
+    dot4.removeClass('side-nav-dot-active')
+    dot5.removeClass('side-nav-dot-active')
+    dot6.removeClass('side-nav-dot-active')
   }
 
-  if(2910<track&&track<10016){
+  if(2810<track&&track<9660){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.addClass('side-nav-dot-active')
     dot5.removeClass('side-nav-dot-active')
     dot6.removeClass('side-nav-dot-active')
+  }
+
+  if(9660<track&&track<10116){
+    dot2.removeClass('side-nav-dot-active')
+    dot3.removeClass('side-nav-dot-active')
+    dot4.removeClass('side-nav-dot-active')
+    dot5.addClass('side-nav-dot-active')
+    dot6.removeClass('side-nav-dot-active')
+  }
+
+  if(track>10116){
+    dot2.removeClass('side-nav-dot-active')
+    dot3.removeClass('side-nav-dot-active')
+    dot4.removeClass('side-nav-dot-active')
+    dot5.removeClass('side-nav-dot-active')
+    dot6.addClass('side-nav-dot-active')
+  }
+
 }
-
-if(10016<track&&track<10116){
-  dot2.removeClass('side-nav-dot-active')
-  dot3.removeClass('side-nav-dot-active')
-  dot4.removeClass('side-nav-dot-active')
-  dot5.addClass('side-nav-dot-active')
-  dot6.removeClass('side-nav-dot-active')
-}
-
-if(track>10224){
-  dot2.removeClass('side-nav-dot-active')
-  dot3.removeClass('side-nav-dot-active')
-  dot4.removeClass('side-nav-dot-active')
-  dot5.removeClass('side-nav-dot-active')
-  dot6.addClass('side-nav-dot-active')
-}
-
-}
-  // if( isElementInViewport($('.initial-summary-img',4))){
-    // dot2.addClass("side-nav-dot-active")
-  // }else{
-    // dot2.removeClass("side-nav-dot-active")
-
-
 
 
 $(window).scroll(function(){
