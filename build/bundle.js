@@ -26500,7 +26500,7 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
-          _react2.default.createElement("img", { src: "img_folder/static-challenge.png" }),
+          _react2.default.createElement("img", { src: "img_folder/static.png" }),
           _react2.default.createElement(
             "h6",
             null,

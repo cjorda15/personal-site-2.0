@@ -85,7 +85,7 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <img src="img_folder/static-challenge.png"/>
+          <img src="img_folder/static.png"/>
           <h6>Static Comp Challenge</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://cjorda15.github.io/cj-comp-challenge-3/">live site</a>
