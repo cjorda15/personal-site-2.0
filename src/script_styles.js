@@ -24,18 +24,16 @@ $(function(){
      $('#greeting-line-animation-1').toggle();
 }
 
- // $navBar.hover(
- //   () =>  navActive(),
- //   () => navUnactive()
- //  )
+ $navBar.hover(
+   () =>  navActive(),
+   () => navUnactive()
+  )
 
  $navBar.on('click',() => activateNav())
  $('.side-nav-link').hover(function(){
     $(this).children('.side-nav-text').toggle()
-    $(this).children('.side-nav-dot').toggleClass('side-nav-dot-active')
   },function(){
     $(this).children('.side-nav-text').toggle()
-    $(this).children('.side-nav-dot').toggleClass('side-nav-dot-active')
      }
    )
 
@@ -122,7 +120,7 @@ const checkLocation = () => {
       dot6.removeClass('side-nav-dot-active')
     }
 
-  if(2299<track&&track<2810){
+  if(2299<track&&track<2710){
     dot2.removeClass('side-nav-dot-active')
     dot3.addClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')
@@ -130,7 +128,7 @@ const checkLocation = () => {
     dot6.removeClass('side-nav-dot-active')
   }
 
-  if(2810<track&&track<9660){
+  if(2710<track&&track<9560){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.addClass('side-nav-dot-active')
@@ -138,7 +136,7 @@ const checkLocation = () => {
     dot6.removeClass('side-nav-dot-active')
   }
 
-  if(9660<track&&track<10016){
+  if(9560<track&&track<9916){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')
@@ -146,7 +144,7 @@ const checkLocation = () => {
     dot6.removeClass('side-nav-dot-active')
   }
 
-  if(track>10016){
+  if(track>9916){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')

@@ -26783,20 +26783,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery2.default)('#greeting-line-animation-1').toggle();
   };
 
-  // $navBar.hover(
-  //   () =>  navActive(),
-  //   () => navUnactive()
-  //  )
+  $navBar.hover(function () {
+    return navActive();
+  }, function () {
+    return navUnactive();
+  });
 
   $navBar.on('click', function () {
     return activateNav();
   });
   (0, _jquery2.default)('.side-nav-link').hover(function () {
     (0, _jquery2.default)(this).children('.side-nav-text').toggle();
-    (0, _jquery2.default)(this).children('.side-nav-dot').toggleClass('side-nav-dot-active');
   }, function () {
     (0, _jquery2.default)(this).children('.side-nav-text').toggle();
-    (0, _jquery2.default)(this).children('.side-nav-dot').toggleClass('side-nav-dot-active');
   });
 
   var randomColor = Math.ceil(Math.random() * 9);
@@ -26864,7 +26863,7 @@ var checkLocation = function checkLocation() {
   var dot6 = (0, _jquery2.default)('#dot-6');
   var track = dot1.offset().top;
 
-  if (814 < track && track < 2399) {
+  if (814 < track && track < 2299) {
     dot2.addClass('side-nav-dot-active');
     dot3.removeClass('side-nav-dot-active');
     dot4.removeClass('side-nav-dot-active');
@@ -26872,7 +26871,7 @@ var checkLocation = function checkLocation() {
     dot6.removeClass('side-nav-dot-active');
   }
 
-  if (2399 < track && track < 2810) {
+  if (2299 < track && track < 2710) {
     dot2.removeClass('side-nav-dot-active');
     dot3.addClass('side-nav-dot-active');
     dot4.removeClass('side-nav-dot-active');
@@ -26880,7 +26879,7 @@ var checkLocation = function checkLocation() {
     dot6.removeClass('side-nav-dot-active');
   }
 
-  if (2810 < track && track < 9660) {
+  if (2710 < track && track < 9560) {
     dot2.removeClass('side-nav-dot-active');
     dot3.removeClass('side-nav-dot-active');
     dot4.addClass('side-nav-dot-active');
@@ -26888,7 +26887,7 @@ var checkLocation = function checkLocation() {
     dot6.removeClass('side-nav-dot-active');
   }
 
-  if (9660 < track && track < 10116) {
+  if (9560 < track && track < 9916) {
     dot2.removeClass('side-nav-dot-active');
     dot3.removeClass('side-nav-dot-active');
     dot4.removeClass('side-nav-dot-active');
@@ -26896,7 +26895,7 @@ var checkLocation = function checkLocation() {
     dot6.removeClass('side-nav-dot-active');
   }
 
-  if (track > 10116) {
+  if (track > 9916) {
     dot2.removeClass('side-nav-dot-active');
     dot3.removeClass('side-nav-dot-active');
     dot4.removeClass('side-nav-dot-active');
