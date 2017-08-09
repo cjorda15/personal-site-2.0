@@ -114,7 +114,7 @@ const checkLocation = () => {
   const dot6 = $('#dot-6')
   const track = dot1.offset().top
 
-  if(814<track&&track<2399){
+  if(814<track&&track<2299){
       dot2.addClass('side-nav-dot-active')
       dot3.removeClass('side-nav-dot-active')
       dot4.removeClass('side-nav-dot-active')
@@ -122,7 +122,7 @@ const checkLocation = () => {
       dot6.removeClass('side-nav-dot-active')
     }
 
-  if(2399<track&&track<2810){
+  if(2299<track&&track<2810){
     dot2.removeClass('side-nav-dot-active')
     dot3.addClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')
@@ -138,7 +138,7 @@ const checkLocation = () => {
     dot6.removeClass('side-nav-dot-active')
   }
 
-  if(9660<track&&track<10116){
+  if(9660<track&&track<10016){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')
@@ -146,7 +146,7 @@ const checkLocation = () => {
     dot6.removeClass('side-nav-dot-active')
   }
 
-  if(track>10116){
+  if(track>10016){
     dot2.removeClass('side-nav-dot-active')
     dot3.removeClass('side-nav-dot-active')
     dot4.removeClass('side-nav-dot-active')
