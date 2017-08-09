@@ -1,10 +1,5 @@
 .contact-container{
-  background-image:url('../img_folder/blurred_ora.jpg');
-  background-size: cover;
-  border-top: 3px solid #D96800;
-  height: 100vh;
-  position: relative;
-  width: 100vw;
+
 }
 
 .contact-container h6{
@@ -13,121 +8,104 @@
   display: inline-block;
   font-family: 'Quicksand', sans-serif;
   font-size: 44px;
-  margin-left: 30px;
+  margin: 0px 0px 10px 30px;
 }
 
 .contact-links{
   align-items: center;
   display: flex;
-  flex-direction: column;
-  height: 75vh;
   justify-content: center;
-  position: absolute;
-  top: 23%;
+  margin: 0px auto;
+  max-width: 360px;
   width: 100%;
 }
 
 .contact-links a{
-  width: 75px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+  flex-direction: column;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  padding: 3px;
+  text-decoration: none;
+}
+.contact-links a p{
+background: #b1b1b1;
+opacity: 0.9;
+padding: 2px;
+border-radius: 3px;
+}
+.contact-links a img{
+  display: flex;
   height: 75px;
+  opacity: 0.6;
+  width: 75px;
 }
 
-
- #link-1{
-animation: link-1 30s;
-animation-delay:0s;
-animation-iteration-count: infinite;
-}
- #link-2{
-animation: link-2 30s;
-animation-delay:0s;
-animation-iteration-count: infinite;
-}
- #link-3{
-animation: link-3 20s;
-animation-delay:0s;
-animation-iteration-count: infinite;
-}
- #link-4{
-animation: link-4 20s;
-animation-delay:0s;
-animation-iteration-count: infinite;
+.contact-links a:hover{
 }
 
-
-@keyframes link-1 {
-    0%   {
-      order: 1
-         }
-   25% {
-     order: 2
-   }
-   50%{
-     order:3
-   }
-
-   75%{
-     order:4
-   }
-
-    100% {
-      order:1;
-    }
+.contact-links a img:hover{
+  opacity: 1.0;
 }
-@keyframes link-2 {
-    0%   {
-      order: 2
-         }
-   25% {
-     order: 3
-   }
-   50%{
-     order:4
-   }
 
-   75%{
-     order:1
-   }
-
-    100% {
-      order:2;
-    }
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  max-width: 500px;
+  width: 80%;
 }
-@keyframes link-3 {
-    0%   {
-      order: 3
-         }
-   25% {
-     order: 4
-   }
-   50%{
-     order:1
-   }
 
-   75%{
-     order:2
-   }
-
-    100% {
-      order:3;
-    }
+.contact-form-input{
+  background: none;
+  border: none;
+  border-bottom: #00b7c7 3px solid;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  height: 64px;
+  outline: none;
+  padding-left: 20px;
 }
-@keyframes link-4 {
-    0%   {
-      order: 4
-         }
-   25% {
-     order: 1
-   }
-   50%{
-     order:2
-   }
 
-   75%{
-     order:3
-   }
+.contact-form-input:focus{
+  font-size: 25px;
+  transition: all 1s;
+}
 
-    100% {
-      order:4;
-    }
+#contact-textarea{
+padding-top: 10px;
+}
+
+.contact-form-btn{
+  background: none;
+  border: 4px solid #00b7c7;
+  color: #00b7c7;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  width: 270px;
+}
+
+.contact-form-btn:hover{
+  background: #00b7c7;
+  border: 4px solid #fff;
+  color: #FCFCFD;
+  transition: all .6s;
+}
+
+.contact-form p{
+  color: #00b7c7;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  margin-top: 100px;
+  text-align: center;
 }

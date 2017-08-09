@@ -8,8 +8,8 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <div className="project-img-holder">
-            <img src="img_folder/codeSport.webp"/>
-            <img className="project-additional-img" src="img_folder/behindCode.webp"/>
+            <img src="img_folder/codeSport.png"/>
+            <img className="project-additional-img" src="img_folder/behindCode.png"/>
           </div>
           <h6>Code Sport</h6>
           <div className="project-link-container">
@@ -27,8 +27,8 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <div className="project-img-holder">
-          <img src="img_folder/news.webp"/>
-          <img className="project-additional-img" src="img_folder/behindNews.webp"/>
+          <img src="img_folder/news.png"/>
+          <img className="project-additional-img" src="img_folder/behindNews.png"/>
           </div>
           <h6>New News</h6>
           <div className="project-link-container">
@@ -46,8 +46,8 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <div className="project-img-holder">
-            <img src="img_folder/movie.webp"/>
-            <img className="project-additional-img" src="img_folder/behindMovie.webp"/>
+            <img src="img_folder/movie.png"/>
+            <img className="project-additional-img" src="img_folder/behindMovie.png"/>
           </div>
           <h6>Movie Tracker</h6>
           <div className="project-link-container">
@@ -66,8 +66,8 @@ const Projects = () => {
       <div className="project-content">
         <div className="project-top-section">
           <div className="project-img-holder">
-            <img className="project-additional-img" src="img_folder/behindWeathrly.webp"/>
-            <img src="img_folder/weathrly.webp"/>
+            <img className="project-additional-img" src="img_folder/behindWeathrly.png"/>
+            <img src="img_folder/weathrly.png"/>
           </div>
           <h6>Weatherly</h6>
           <div className="project-link-container">
@@ -79,13 +79,13 @@ const Projects = () => {
           <p>Weathrly was the first app I built in React.js as well as my first encounter with handling asynchronous fetch calls. It utilizes Weather Underground’s API to render on demand weather forecasts to a stylish and accessible user interface. In addition to using React JS, Enzyme was used to thoroughly test our application.</p>
         </div>
         <div className="project-bottom-section">
-          <p>This project involved react, webpack, and further testing with mocha and enzyme over a period of four days.
+          <p>This project involved react, pngack, and further testing with mocha and enzyme over a period of four days.
           </p>
         </div>
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <img src="img_folder/static-challenge.webp"/>
+          <img src="img_folder/static-challenge.png"/>
           <h6>Static Comp Challenge</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://cjorda15.github.io/cj-comp-challenge-3/">live site</a>
@@ -101,7 +101,7 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <img src="img_folder/space2.webp"/>
+          <img src="img_folder/space2.png"/>
           <h6>SPACE BREAKOUT</h6>
           <div className="project-link-container">
             <a href="https://evening-harbor-90728.herokuapp.com">live site</a> <a href="https://github.com/cjorda15/space-invaders-">github</a>
@@ -117,7 +117,7 @@ const Projects = () => {
       </div>
       <div className="project-content">
         <div className="project-top-section">
-          <img src="img_folder/oldSite.webp"/>
+          <img src="img_folder/oldSite.png"/>
           <h6>old personal site</h6>
           <div className="project-link-container">
             <a target="_blank" href="https://peaceful-fjord-71465.herokuapp.com">live site</a>
@@ -125,7 +125,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-middle-section">
-          <p>My last personal site hosted on heroku with express and webpack setup and I guess needless react</p>
+          <p>My last personal site hosted on heroku with express and pngack setup and I guess needless react</p>
         </div>
         <div className="project-bottom-section">
         <p> other projects can be found at </p>
@@ -137,8 +137,11 @@ const Projects = () => {
      </div>
      <div id="resume" className='resume-container'>
        <p>Resume</p>
-       <a href="chris_jordan_resume">download zip file here</a>
-       <a  href="https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf"> or view it from github</a>
+       <div className="resume-links">
+         <a href="chris_jordan_resume">download zip file here</a>
+         <p id="project-or">or</p>
+         <a href="https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf"> view it from github</a>
+       </div>
      </div>
     </section>
   )

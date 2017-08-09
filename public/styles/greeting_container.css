@@ -4,7 +4,8 @@
   width: 100vw;
 }
 .greeting-container-img{
-  background-image: url("../img_folder/pexels-photo.webp");
+  background-image: url("../img_folder/pexels-photo.png");
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -24,7 +25,7 @@
 }
 
 .greeting-main-text, .greeting-main-subtext{
-  animation: top 8s;
+  animation: top 10s;
   animation-delay:0s;
   animation-fill-mode: forwards;
   font-family: 'Lobster',Georgia,serif;

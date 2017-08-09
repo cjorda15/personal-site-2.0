@@ -437,6 +437,16 @@ module.exports = reactProdInvariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(20);
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -527,16 +537,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(20);
 
 
 /***/ }),
@@ -1371,7 +1371,7 @@ module.exports = ReactCurrentOwner;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(71);
 var PooledClass = __webpack_require__(18);
@@ -1627,7 +1627,7 @@ module.exports = ReactUpdates;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(18);
 
@@ -2114,7 +2114,7 @@ module.exports = DOMProperty;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var ReactCurrentOwner = __webpack_require__(13);
 
@@ -2647,7 +2647,7 @@ module.exports = warning;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var ReactBaseClasses = __webpack_require__(60);
 var ReactChildren = __webpack_require__(98);
@@ -4584,7 +4584,7 @@ module.exports = escapeTextContentForBrowser;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var EventPluginRegistry = __webpack_require__(31);
 var ReactEventEmitterMixin = __webpack_require__(147);
@@ -6443,7 +6443,7 @@ module.exports = ReactUpdateQueue;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var emptyFunction = __webpack_require__(9);
 var warning = __webpack_require__(2);
@@ -7042,7 +7042,7 @@ exports.default = createTransitionManager;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
@@ -7245,7 +7245,7 @@ var matchPath = function matchPath(pathname) {
 
 
 var _prodInvariant = __webpack_require__(21),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var ReactNoopUpdateQueue = __webpack_require__(61);
 
@@ -9412,7 +9412,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(6);
@@ -9619,7 +9619,7 @@ module.exports = ReactDOMSelect;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var ReactCompositeComponent = __webpack_require__(154);
 var ReactEmptyComponent = __webpack_require__(84);
@@ -11295,7 +11295,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -11437,7 +11437,7 @@ Route.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -11549,7 +11549,7 @@ module.exports = __webpack_require__(97);
 "use strict";
 
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -11567,7 +11567,7 @@ var _app = __webpack_require__(225);
 
 var _app2 = _interopRequireDefault(_app);
 
-__webpack_require__(233);
+__webpack_require__(234);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12617,7 +12617,7 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var emptyObject = __webpack_require__(30);
 var _invariant = __webpack_require__(1);
@@ -14227,7 +14227,7 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(18);
 
@@ -16261,7 +16261,7 @@ module.exports = ReactDOMIDOperations;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var AutoFocusUtils = __webpack_require__(138);
 var CSSPropertyOperations = __webpack_require__(139);
@@ -17983,7 +17983,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var DOMPropertyOperations = __webpack_require__(79);
 var LinkedValueUtils = __webpack_require__(48);
@@ -18275,7 +18275,7 @@ module.exports = ReactDOMInput;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var React = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(6);
@@ -18404,7 +18404,7 @@ module.exports = ReactDOMOption;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(6);
@@ -19181,7 +19181,7 @@ module.exports = ReactChildReconciler;
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var React = __webpack_require__(20);
 var ReactComponentEnvironment = __webpack_require__(49);
@@ -20389,7 +20389,7 @@ module.exports = flattenChildren;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(18);
 var Transaction = __webpack_require__(32);
@@ -20630,7 +20630,7 @@ module.exports = ReactServerUpdateQueue;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var DOMLazyTree = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(6);
@@ -20838,7 +20838,7 @@ module.exports = {
 
 
 var _prodInvariant = __webpack_require__(3),
-    _assign = __webpack_require__(4);
+    _assign = __webpack_require__(5);
 
 var DOMChildrenOperations = __webpack_require__(45);
 var DOMLazyTree = __webpack_require__(23);
@@ -21005,7 +21005,7 @@ module.exports = ReactDOMTextComponent;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var ReactUpdates = __webpack_require__(14);
 var Transaction = __webpack_require__(32);
@@ -21078,7 +21078,7 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var EventListener = __webpack_require__(87);
 var ExecutionEnvironment = __webpack_require__(7);
@@ -21321,7 +21321,7 @@ module.exports = ReactInjection;
 
 
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(71);
 var PooledClass = __webpack_require__(18);
@@ -23749,7 +23749,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -23997,7 +23997,7 @@ exports.default = valueEqual;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -24233,7 +24233,7 @@ exports.default = createMemoryHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -24319,7 +24319,7 @@ Prompt.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -24848,7 +24848,7 @@ module.exports = Array.isArray || function (arr) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_invariant__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -25022,7 +25022,7 @@ StaticRouter.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25108,7 +25108,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25210,7 +25210,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25608,7 +25608,7 @@ exports.default = createHashHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25763,7 +25763,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25791,7 +25791,7 @@ var _projects = __webpack_require__(232);
 
 var _projects2 = _interopRequireDefault(_projects);
 
-var _contact = __webpack_require__(235);
+var _contact = __webpack_require__(233);
 
 var _contact2 = _interopRequireDefault(_contact);
 
@@ -25824,7 +25824,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25879,7 +25879,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25955,7 +25955,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26000,7 +26000,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26053,7 +26053,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26135,7 +26135,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26272,7 +26272,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26299,8 +26299,8 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
-            _react2.default.createElement("img", { src: "img_folder/codeSport.webp" }),
-            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindCode.webp" })
+            _react2.default.createElement("img", { src: "img_folder/codeSport.png" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindCode.png" })
           ),
           _react2.default.createElement(
             "h6",
@@ -26350,8 +26350,8 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
-            _react2.default.createElement("img", { src: "img_folder/news.webp" }),
-            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindNews.webp" })
+            _react2.default.createElement("img", { src: "img_folder/news.png" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindNews.png" })
           ),
           _react2.default.createElement(
             "h6",
@@ -26401,8 +26401,8 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
-            _react2.default.createElement("img", { src: "img_folder/movie.webp" }),
-            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindMovie.webp" })
+            _react2.default.createElement("img", { src: "img_folder/movie.png" }),
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindMovie.png" })
           ),
           _react2.default.createElement(
             "h6",
@@ -26452,8 +26452,8 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "div",
             { className: "project-img-holder" },
-            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindWeathrly.webp" }),
-            _react2.default.createElement("img", { src: "img_folder/weathrly.webp" })
+            _react2.default.createElement("img", { className: "project-additional-img", src: "img_folder/behindWeathrly.png" }),
+            _react2.default.createElement("img", { src: "img_folder/weathrly.png" })
           ),
           _react2.default.createElement(
             "h6",
@@ -26490,7 +26490,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "This project involved react, webpack, and further testing with mocha and enzyme over a period of four days."
+            "This project involved react, pngack, and further testing with mocha and enzyme over a period of four days."
           )
         )
       ),
@@ -26500,7 +26500,7 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
-          _react2.default.createElement("img", { src: "img_folder/static-challenge.webp" }),
+          _react2.default.createElement("img", { src: "img_folder/static-challenge.png" }),
           _react2.default.createElement(
             "h6",
             null,
@@ -26546,7 +26546,7 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
-          _react2.default.createElement("img", { src: "img_folder/space2.webp" }),
+          _react2.default.createElement("img", { src: "img_folder/space2.png" }),
           _react2.default.createElement(
             "h6",
             null,
@@ -26593,7 +26593,7 @@ var Projects = function Projects() {
         _react2.default.createElement(
           "div",
           { className: "project-top-section" },
-          _react2.default.createElement("img", { src: "img_folder/oldSite.webp" }),
+          _react2.default.createElement("img", { src: "img_folder/oldSite.png" }),
           _react2.default.createElement(
             "h6",
             null,
@@ -26620,7 +26620,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "My last personal site hosted on heroku with express and webpack setup and I guess needless react"
+            "My last personal site hosted on heroku with express and pngack setup and I guess needless react"
           )
         ),
         _react2.default.createElement(
@@ -26648,14 +26648,23 @@ var Projects = function Projects() {
         "Resume"
       ),
       _react2.default.createElement(
-        "a",
-        { href: "chris_jordan_resume" },
-        "download zip file here"
-      ),
-      _react2.default.createElement(
-        "a",
-        { href: "https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf" },
-        " or view it from github"
+        "div",
+        { className: "resume-links" },
+        _react2.default.createElement(
+          "a",
+          { href: "chris_jordan_resume" },
+          "download zip file here"
+        ),
+        _react2.default.createElement(
+          "p",
+          { id: "project-or" },
+          "or"
+        ),
+        _react2.default.createElement(
+          "a",
+          { href: "https://github.com/cjorda15/portfolio/blob/master/Christopher%20R.%20Jordan%20Resume%202.pdf" },
+          " view it from github"
+        )
       )
     )
   );
@@ -26670,7 +26679,79 @@ exports.default = Projects;
 "use strict";
 
 
-var _jquery = __webpack_require__(234);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var Contact = function Contact() {
+  return _react2.default.createElement(
+    "div",
+    { id: "contact", className: "contact-container" },
+    _react2.default.createElement(
+      "h6",
+      null,
+      "Contact"
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "contact-links" },
+      _react2.default.createElement(
+        "a",
+        _defineProperty({ target: "_blank", id: "link-1", href: "mailto:crobertjordan@yahoo.com?Subject=Hello" }, "target", "_top"),
+        _react2.default.createElement("img", { src: "img_folder/Email.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { target: "_blank", id: "link-2", href: "tel:303-726-2125" },
+        _react2.default.createElement("img", { src: "img_folder/Phone.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { target: "_blank", id: "link-3", href: "https://github.com/cjorda15" },
+        _react2.default.createElement("img", { src: "img_folder/GitHub.png" })
+      ),
+      _react2.default.createElement(
+        "a",
+        { target: "_blank", id: "link-4", href: "https://www.linkedin.com/in/christopher-jordan-7a1139121/" },
+        _react2.default.createElement("img", { src: "img_folder/LinkedIn.png" })
+      )
+    ),
+    _react2.default.createElement(
+      "form",
+      { className: "contact-form", action: "https://formspree.io/crobertjordan1991@yahoo.com",
+        method: "POST" },
+      _react2.default.createElement(
+        "p",
+        null,
+        " Feel free to send me a quick message if you would prefer"
+      ),
+      _react2.default.createElement("input", { className: "contact-form-input", type: "text", name: "name", placeholder: "name" }),
+      _react2.default.createElement("input", { className: "contact-form-input", type: "email", name: "_replyto", placeholder: "email" }),
+      _react2.default.createElement("input", { className: "contact-form-input", type: "subject", name: "subject", placeholder: "subject" }),
+      _react2.default.createElement("textarea", { id: "contact-textarea", className: "contact-form-input", type: "message", name: "message", placeholder: "message" }),
+      _react2.default.createElement("input", { className: "contact-form-btn", type: "submit", value: "Send" })
+    )
+  );
+};
+
+exports.default = Contact;
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(235);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -26796,7 +26877,7 @@ var jump = function jump(e) {
 };
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37054,61 +37135,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-/* 235 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Contact = function Contact() {
-  return _react2.default.createElement(
-    "div",
-    { id: "contact", className: "contact-container" },
-    _react2.default.createElement(
-      "h6",
-      null,
-      "Contact"
-    ),
-    _react2.default.createElement(
-      "div",
-      { className: "contact-links" },
-      _react2.default.createElement(
-        "a",
-        { id: "link-1", src: "#" },
-        _react2.default.createElement("img", { src: "img_folder/email.png" })
-      ),
-      _react2.default.createElement(
-        "a",
-        { id: "link-2" },
-        _react2.default.createElement("img", { src: "img_folder/Phone.png" })
-      ),
-      _react2.default.createElement(
-        "a",
-        { id: "link-3" },
-        _react2.default.createElement("img", { src: "img_folder/GitHub.png" })
-      ),
-      _react2.default.createElement(
-        "a",
-        { id: "link-4" },
-        _react2.default.createElement("img", { src: "img_folder/LinkedIn.png" })
-      )
-    )
-  );
-};
-
-exports.default = Contact;
 
 /***/ })
 /******/ ]);
