@@ -24,10 +24,10 @@ $(function(){
      $('#greeting-line-animation-1').toggle();
 }
 
- $navBar.hover(
-   () =>  navActive(),
-   () => navUnactive()
-  )
+ // $navBar.hover(
+ //   () =>  navActive(),
+ //   () => navUnactive()
+ //  )
 
  $navBar.on('click',() => activateNav())
  $('.side-nav-link').hover(function(){
@@ -62,7 +62,7 @@ $(function(){
 
 function isElementInViewport(elem,type) {
     const $elem = $('.initial-summary-line-1');
-    const scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+      const scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
     const viewportTop = $(scrollElem).scrollTop();
     const viewportBottom = type===1||3?
         viewportTop + $(window).height()-50
@@ -73,9 +73,10 @@ function isElementInViewport(elem,type) {
     const elemBottom = type===3?
     elemTop + $elem.height()+10000
       :
-    elemTop + $elem.height();
+   type===4?  $elemTop-700+$elem.height():elemTop + $elem.height();
 
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+    return ((elemTop < viewportBottom)&&(elemBottom > viewportTop) );
+
 }
 
 const checkAnimation = () => {
@@ -104,11 +105,69 @@ const checkSideBar = () => {
   }
 }
 
+const checkLocation = () => {
+  const dot1 = $('#dot-1')
+  const dot2 = $('#dot-2')
+  const dot3 = $('#dot-3')
+  const dot4 = $('#dot-4')
+  const dot5 = $('#dot-5')
+  const dot6 = $('#dot-6')
+  const track = dot1.offset().top
+console.log(track)
+    if(814<track&&track<2499){
+      dot2.addClass('side-nav-dot-active')
+      dot3.removeClass('side-nav-dot-active')
+      dot4.removeClass('side-nav-dot-active')
+      dot5.removeClass('side-nav-dot-active')
+      dot6.removeClass('side-nav-dot-active')
+    }
+
+    if(2499<track&&track<2910){
+      dot2.removeClass('side-nav-dot-active')
+      dot3.addClass('side-nav-dot-active')
+      dot4.removeClass('side-nav-dot-active')
+      dot5.removeClass('side-nav-dot-active')
+      dot6.removeClass('side-nav-dot-active')
+  }
+
+  if(2910<track&&track<10016){
+    dot2.removeClass('side-nav-dot-active')
+    dot3.removeClass('side-nav-dot-active')
+    dot4.addClass('side-nav-dot-active')
+    dot5.removeClass('side-nav-dot-active')
+    dot6.removeClass('side-nav-dot-active')
+}
+
+if(10016<track&&track<10116){
+  dot2.removeClass('side-nav-dot-active')
+  dot3.removeClass('side-nav-dot-active')
+  dot4.removeClass('side-nav-dot-active')
+  dot5.addClass('side-nav-dot-active')
+  dot6.removeClass('side-nav-dot-active')
+}
+
+if(track>10224){
+  dot2.removeClass('side-nav-dot-active')
+  dot3.removeClass('side-nav-dot-active')
+  dot4.removeClass('side-nav-dot-active')
+  dot5.removeClass('side-nav-dot-active')
+  dot6.addClass('side-nav-dot-active')
+}
+
+}
+  // if( isElementInViewport($('.initial-summary-img',4))){
+    // dot2.addClass("side-nav-dot-active")
+  // }else{
+    // dot2.removeClass("side-nav-dot-active")
+
+
+
 
 $(window).scroll(function(){
     checkAnimation();
     checkAnimation2();
-    checkSideBar()
+    checkSideBar();
+    checkLocation();
 });
 
 const jump = function(e){

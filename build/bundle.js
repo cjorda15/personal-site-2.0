@@ -26007,7 +26007,6 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var InitialSummary = function InitialSummary() {
-  // <p className="initial-summary-title">Hey, call me Chris.</p>
   return _react2.default.createElement(
     "div",
     { id: "about-me", className: "initial-summary-container" },
@@ -26029,12 +26028,12 @@ var InitialSummary = function InitialSummary() {
       _react2.default.createElement(
         "p",
         { className: "inital-summary-description" },
-        " I have been attending Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, Javascript, JQuery, and Design Fundamentals."
+        " I have recently graduated from Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, Javascript, JQuery, and Design Fundamentals."
       ),
       _react2.default.createElement(
         "p",
         { className: "inital-summary-description" },
-        "I continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js."
+        "I have continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js."
       )
     )
   );
@@ -26178,7 +26177,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "top"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-1", className: "side-nav-dot" })
             )
           ),
           _react2.default.createElement(
@@ -26192,7 +26191,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "about me"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-2", className: "side-nav-dot" })
             )
           ),
           _react2.default.createElement(
@@ -26206,7 +26205,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "skills"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-3", className: "side-nav-dot" })
             )
           ),
           _react2.default.createElement(
@@ -26220,7 +26219,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "projects"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-4", className: "side-nav-dot" })
             )
           ),
           _react2.default.createElement(
@@ -26234,7 +26233,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "resume"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-5", className: "side-nav-dot" })
             )
           ),
           _react2.default.createElement(
@@ -26248,7 +26247,7 @@ var SideNavBar = function (_Component) {
                 { className: "side-nav-text", style: linkStyle },
                 "contact"
               ),
-              _react2.default.createElement("span", { className: "side-nav-dot" })
+              _react2.default.createElement("span", { id: "dot-6", className: "side-nav-dot" })
             )
           )
         )
@@ -26620,7 +26619,7 @@ var Projects = function Projects() {
           _react2.default.createElement(
             "p",
             null,
-            "My last personal site hosted on heroku with express and pngack setup and I guess needless react"
+            "My last personal site hosted on heroku with express and webpack setup and react"
           )
         ),
         _react2.default.createElement(
@@ -26784,11 +26783,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery2.default)('#greeting-line-animation-1').toggle();
   };
 
-  $navBar.hover(function () {
-    return navActive();
-  }, function () {
-    return navUnactive();
-  });
+  // $navBar.hover(
+  //   () =>  navActive(),
+  //   () => navUnactive()
+  //  )
 
   $navBar.on('click', function () {
     return activateNav();
@@ -26827,7 +26825,7 @@ function isElementInViewport(elem, type) {
   var viewportBottom = type === 1 || 3 ? viewportTop + (0, _jquery2.default)(window).height() - 50 : viewportTop + (0, _jquery2.default)(window).height();
 
   var elemTop = Math.round($elem.offset().top);
-  var elemBottom = type === 3 ? elemTop + $elem.height() + 10000 : elemTop + $elem.height();
+  var elemBottom = type === 3 ? elemTop + $elem.height() + 10000 : type === 4 ? $elemTop - 700 + $elem.height() : elemTop + $elem.height();
 
   return elemTop < viewportBottom && elemBottom > viewportTop;
 }
@@ -26857,10 +26855,66 @@ var checkSideBar = function checkSideBar() {
   }
 };
 
+var checkLocation = function checkLocation() {
+  var dot1 = (0, _jquery2.default)('#dot-1');
+  var dot2 = (0, _jquery2.default)('#dot-2');
+  var dot3 = (0, _jquery2.default)('#dot-3');
+  var dot4 = (0, _jquery2.default)('#dot-4');
+  var dot5 = (0, _jquery2.default)('#dot-5');
+  var dot6 = (0, _jquery2.default)('#dot-6');
+  var track = dot1.offset().top;
+  console.log(track);
+  if (814 < track && track < 2499) {
+    dot2.addClass('side-nav-dot-active');
+    dot3.removeClass('side-nav-dot-active');
+    dot4.removeClass('side-nav-dot-active');
+    dot5.removeClass('side-nav-dot-active');
+    dot6.removeClass('side-nav-dot-active');
+  }
+
+  if (2499 < track && track < 2910) {
+    dot2.removeClass('side-nav-dot-active');
+    dot3.addClass('side-nav-dot-active');
+    dot4.removeClass('side-nav-dot-active');
+    dot5.removeClass('side-nav-dot-active');
+    dot6.removeClass('side-nav-dot-active');
+  }
+
+  if (2910 < track && track < 10016) {
+    dot2.removeClass('side-nav-dot-active');
+    dot3.removeClass('side-nav-dot-active');
+    dot4.addClass('side-nav-dot-active');
+    dot5.removeClass('side-nav-dot-active');
+    dot6.removeClass('side-nav-dot-active');
+  }
+
+  if (10016 < track && track < 10116) {
+    dot2.removeClass('side-nav-dot-active');
+    dot3.removeClass('side-nav-dot-active');
+    dot4.removeClass('side-nav-dot-active');
+    dot5.addClass('side-nav-dot-active');
+    dot6.removeClass('side-nav-dot-active');
+  }
+
+  if (track > 10224) {
+    dot2.removeClass('side-nav-dot-active');
+    dot3.removeClass('side-nav-dot-active');
+    dot4.removeClass('side-nav-dot-active');
+    dot5.removeClass('side-nav-dot-active');
+    dot6.addClass('side-nav-dot-active');
+  }
+};
+// if( isElementInViewport($('.initial-summary-img',4))){
+// dot2.addClass("side-nav-dot-active")
+// }else{
+// dot2.removeClass("side-nav-dot-active")
+
+
 (0, _jquery2.default)(window).scroll(function () {
   checkAnimation();
   checkAnimation2();
   checkSideBar();
+  checkLocation();
 });
 
 var jump = function jump(e) {

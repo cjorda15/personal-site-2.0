@@ -125,7 +125,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-middle-section">
-          <p>My last personal site hosted on heroku with express and pngack setup and I guess needless react</p>
+          <p>My last personal site hosted on heroku with express and webpack setup and react</p>
         </div>
         <div className="project-bottom-section">
         <p> other projects can be found at </p>
