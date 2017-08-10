@@ -3,7 +3,7 @@ import React from 'react'
 const navBar = () => {
 
   return(
-    <div className="nav-links nav-links-hide">
+    <div className="nav-links  nav-links-active">
       <ul>
         <li>
          <a href="#about-me">about</a>

@@ -25841,15 +25841,7 @@ var Header = function Header() {
     _react2.default.createElement(
       'header',
       { id: 'top' },
-      _react2.default.createElement(
-        'div',
-        { className: 'header-left-container' },
-        _react2.default.createElement(
-          'h3',
-          null,
-          'welcome to my site'
-        )
-      ),
+      _react2.default.createElement('div', { className: 'header-left-container' }),
       _react2.default.createElement(
         'div',
         { className: 'header-right-container' },
@@ -25889,7 +25881,7 @@ var navBar = function navBar() {
 
   return _react2.default.createElement(
     "div",
-    { className: "nav-links nav-links-hide" },
+    { className: "nav-links  nav-links-active" },
     _react2.default.createElement(
       "ul",
       null,
@@ -26058,12 +26050,12 @@ var InitialSummary = function InitialSummary() {
       _react2.default.createElement(
         "p",
         { className: "inital-summary-description" },
-        " I have recently graduated from Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, Javascript, JQuery, and Design Fundamentals."
+        " I have recently graduated from Turing School of Software and Design located in downtown Denver. Turing students invest over 1500 hours across seven months in becoming ready-made web developers. In the Front-End Engineering program, we began by building skills in HTML5, CSS3, JavaScript, jQuery, and Design Fundamentals."
       ),
       _react2.default.createElement(
         "p",
         { className: "inital-summary-description" },
-        "I have continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js."
+        "We continued laying a solid foundation in Javascript from DOM manipulation to writing complex algorithms with a focus on ES2015, then progressed into React/Redux. In the final quarter, we focused on building backend applications with express/node and SQL through knex.js."
       )
     )
   );
@@ -26108,12 +26100,12 @@ var Skills = function Skills() {
       _react2.default.createElement(
         'div',
         { className: 'skill-flex-item ' },
-        'HTLM5'
+        'HTML5'
       ),
       _react2.default.createElement(
         'div',
         { className: 'skill-flex-item ' },
-        'CC3'
+        'CCS3'
       ),
       _react2.default.createElement(
         'div',
@@ -26787,9 +26779,9 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
-  setTimeout(function () {
-    (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
-  }, 1000);
+  // setTimeout(()=>{
+  // $('.nav-links').toggle('nav-links-active');
+  // },1000)
   (0, _jquery2.default)('a').bind("click", jump);
 
   if (location.hash) {
@@ -26835,13 +26827,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   var runClear = function runClear(that) {
     for (var i = 1; i < 10; i++) {
-      (0, _jquery2.default)(that).removeClass('skill-animate-' + i);
+      (0, _jquery2.default)(that).removeClass("skill-animate-" + i);
     }
   };
 
   (0, _jquery2.default)('.skill-flex-item').hover(function () {
     randomColor = Math.ceil(Math.random() * 9);
-    (0, _jquery2.default)(this).addClass('skill-animate-' + randomColor);
+    (0, _jquery2.default)(this).addClass("skill-animate-" + randomColor);
   }, function () {
     var that = this;
     setTimeout(function () {

@@ -1,8 +1,9 @@
 import $ from "jquery";
 
 $(document).ready(function(){
-    setTimeout(()=>{$('.nav-links').toggle('nav-links-active');
-  },1000)
+    // setTimeout(()=>{
+      // $('.nav-links').toggle('nav-links-active');
+  // },1000)
   $('a').bind("click", jump);
 
   if (location.hash){

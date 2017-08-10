@@ -6,8 +6,8 @@ const Skills = () => {
       <h6 id='skills'>Skills</h6>
       <section className="skill-flex-container">
         <div  className="skill-flex-item">JavaScript</div>
-        <div  className="skill-flex-item ">HTLM5</div>
-        <div  className="skill-flex-item ">CC3</div>
+        <div  className="skill-flex-item ">HTML5</div>
+        <div  className="skill-flex-item ">CCS3</div>
         <div  className="skill-flex-item ">React/Redux</div>
         <div  className="skill-flex-item ">Express/Node</div>
         <div  className="skill-flex-item ">Knex.js</div>
