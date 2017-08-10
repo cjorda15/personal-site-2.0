@@ -26787,14 +26787,16 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
-  (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
+  setTimeout(function () {
+    (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
+  }, 1000);
   (0, _jquery2.default)('a').bind("click", jump);
 
   if (location.hash) {
     setTimeout(function () {
       (0, _jquery2.default)('html, body').scrollTop(0).show();
       jump();
-    }, 0);
+    }, 3000);
   } else {
     (0, _jquery2.default)('html, body').show();
   }

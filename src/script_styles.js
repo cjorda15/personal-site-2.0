@@ -1,14 +1,15 @@
 import $ from "jquery";
 
 $(document).ready(function(){
-    $('.nav-links').toggle('nav-links-active');
+    setTimeout(()=>{$('.nav-links').toggle('nav-links-active');
+  },1000)
   $('a').bind("click", jump);
 
   if (location.hash){
     setTimeout(function(){
       $('html, body').scrollTop(0).show()
       jump()
-    }, 0);
+    }, 3000);
   }else{
     $('html, body').show()
   }
