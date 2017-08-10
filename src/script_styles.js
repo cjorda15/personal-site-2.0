@@ -1,7 +1,9 @@
 import $ from "jquery";
 
-$(document).ready(function()
-{
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.nav-links').toggle('nav-links-active');
+  },800)
   $('a').bind("click", jump);
 
   if (location.hash){
@@ -21,7 +23,7 @@ $(function(){
   const navUnactive = () => $navBar.removeClass('navbar-toggle-active')
   const activateNav = () => {
     $navLinks.toggle('nav-links-active');
-     $('#greeting-line-animation-1').toggle();
+    //  $('#greeting-line-animation-1').toggle();
 }
 
  $navBar.hover(

@@ -3,7 +3,7 @@ body{
 
 header{
   align-items: center;
-  background: #1b1b1b;
+  background: #F5F5F5;
   border-bottom: 3px solid black;
   display: flex;
   height: 110px;
@@ -15,8 +15,8 @@ header h3{
   font-family: 'Quicksand', sans-serif;
   font-size: 2em;
   color: #fff;
-  text-shadow: 0.9px 2.4px 1.2px #000;
-}
+  text-shadow: 1.9px 1.4px 4.2px #000;
+  }
 
 
 .icon-bar{

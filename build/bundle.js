@@ -25972,11 +25972,15 @@ var GreetingContainer = function GreetingContainer() {
         "div",
         { className: "greeting-main" },
         _react2.default.createElement(
-          "p",
-          { className: "greeting-main-text" },
-          "Christopher Jordan"
+          "div",
+          { className: "greeting-headline" },
+          _react2.default.createElement(
+            "p",
+            { className: "greeting-main-text" },
+            "Christopher Jordan"
+          ),
+          _react2.default.createElement("span", { id: "greeting-line-animation-1" })
         ),
-        _react2.default.createElement("span", { id: "greeting-line-animation-1" }),
         _react2.default.createElement(
           "p",
           { className: "greeting-main-subtext" },
@@ -26757,6 +26761,9 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
+  setTimeout(function () {
+    (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
+  }, 800);
   (0, _jquery2.default)('a').bind("click", jump);
 
   if (location.hash) {
@@ -26780,7 +26787,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   };
   var activateNav = function activateNav() {
     $navLinks.toggle('nav-links-active');
-    (0, _jquery2.default)('#greeting-line-animation-1').toggle();
+    //  $('#greeting-line-animation-1').toggle();
   };
 
   $navBar.hover(function () {
@@ -26802,13 +26809,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   var runClear = function runClear(that) {
     for (var i = 1; i < 10; i++) {
-      (0, _jquery2.default)(that).removeClass("skill-animate-" + i);
+      (0, _jquery2.default)(that).removeClass('skill-animate-' + i);
     }
   };
 
   (0, _jquery2.default)('.skill-flex-item').hover(function () {
     randomColor = Math.ceil(Math.random() * 9);
-    (0, _jquery2.default)(this).addClass("skill-animate-" + randomColor);
+    (0, _jquery2.default)(this).addClass('skill-animate-' + randomColor);
   }, function () {
     var that = this;
     setTimeout(function () {
