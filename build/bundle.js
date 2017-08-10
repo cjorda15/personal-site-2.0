@@ -25961,6 +25961,8 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var GreetingContainer = function GreetingContainer() {
   return _react2.default.createElement(
     "div",
@@ -25985,6 +25987,30 @@ var GreetingContainer = function GreetingContainer() {
           "p",
           { className: "greeting-main-subtext" },
           "Front End Engineer"
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "contact-links" },
+        _react2.default.createElement(
+          "a",
+          _defineProperty({ target: "_blank", id: "link-1", href: "mailto:crobertjordan@yahoo.com?Subject=Hello" }, "target", "_top"),
+          _react2.default.createElement("img", { src: "img_folder/Email.png" })
+        ),
+        _react2.default.createElement(
+          "a",
+          { target: "_blank", id: "link-2", href: "tel:303-726-2125" },
+          _react2.default.createElement("img", { src: "img_folder/Phone.png" })
+        ),
+        _react2.default.createElement(
+          "a",
+          { target: "_blank", id: "link-3", href: "https://github.com/cjorda15" },
+          _react2.default.createElement("img", { src: "img_folder/GitHub.png" })
+        ),
+        _react2.default.createElement(
+          "a",
+          { target: "_blank", id: "link-4", href: "https://www.linkedin.com/in/christopher-jordan-7a1139121/" },
+          _react2.default.createElement("img", { src: "img_folder/LinkedIn.png" })
         )
       )
     )
@@ -26761,9 +26787,7 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(document).ready(function () {
-  setTimeout(function () {
-    (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
-  }, 800);
+  (0, _jquery2.default)('.nav-links').toggle('nav-links-active');
   (0, _jquery2.default)('a').bind("click", jump);
 
   if (location.hash) {
